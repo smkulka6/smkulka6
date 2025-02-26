@@ -1,8 +1,5 @@
 ---
 title: Welcome
-tags:
-- tag1
-- tag2
 ---
 
 # Siddhant Kulkarni Project Repository
