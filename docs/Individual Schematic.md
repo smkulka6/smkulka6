@@ -1,7 +1,7 @@
 # Schematic Diagram
 
 
-![Schematic Diagram](./path/to/your-image.png)
+![Schematic Diagram](docs/subfolder/Schematic.png)
 
 You can download the PDF version of the schematic by clicking the link below:
 
