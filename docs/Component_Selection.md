@@ -101,3 +101,9 @@ These additional components play a vital role in ensuring the stability and reli
 | PWM        | ?                   | ?      | ...                                                             |
 | ICSP       | 3                   | 3      | RB-6,RB-7,MCLR                                                  |
 | ...        | ...                 | ...    | ...                                                             |
+
+---
+
+## Power Budget
+
+[Power Budget ](https://docs.google.com/spreadsheets/d/156U78wOTZNQjrQSCz7AoKw_OFbUZ7FwH/edit?usp=sharing&ouid=107614409505094169035&rtpof=true&sd=true)
