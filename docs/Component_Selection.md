@@ -2,7 +2,7 @@
 
 ## 1. Motor Driver
 
-The motor driver is a critical component for controlling the direction and speed of the motor. Since my design requires bidirectional control of a motor (using a generator as a motor), I needed a motor driver with high efficiency, integrated protection features, and compatibility with my microcontroller. I considered multiple options before finalizing my choice, ensuring that the selected component met my design criteria.
+The motor driver is a critical component for controlling the direction and speed of the motor. Since my design requires bidirectional control of a motor, I needed a motor driver with high efficiency, integrated protection features, and compatibility with my microcontroller. I considered multiple options before finalizing my choice, ensuring that the selected component met my design criteria.
 
 ### Component Options
 
@@ -48,9 +48,9 @@ This selection ensures efficient communication and control of the motor driver a
 
 ---
 
-## 4. Water Generator Turbine (Used as a Motor)
+## 4. Motor Pump
 
-In my design, I am repurposing a water generator turbine to function as a bidirectional motor. This choice is based on the need for a compact, efficient motor with built-in water resistance, making it ideal for my application.
+In my design, I am repurposing a Motor Pump to function as a bidirectional motor. This choice is based on the need for a compact, efficient motor with built-in water resistance, making it ideal for my application.
 
 ### Component Option
 
@@ -89,8 +89,15 @@ These additional components play a vital role in ensuring the stability and reli
 
 ---
 
-## Pin Allocation Code
+## Pin Allocation
 
-```c
-// Add your pin allocation code here
-
+| Module     | # Available         | Needed | Associated Pins (or * for any)                                  |
+| ---------- | ------------------- | ------ | --------------------------------------------------------------- |
+| GPIO       | 21                  | 5      | RC_2 , RC_3 , RC_4 , RA_5 , RA_6                                |
+| ADC        | 10                  | 0      | ...                                                             |
+| UART       | 2                   | 2      | RX-RC_6 , TX-RC_7                                               |
+| SPI        | 2                   | 2      | SI-RC_4 , SO-RC_5                                               |
+| I2C        | 2                   | 0      | ...                                                             |
+| PWM        | ?                   | ?      | ...                                                             |
+| ICSP       | 3                   | 3      | RB-6,RB-7,MCLR                                                  |
+| ...        | ...                 | ...    | ...                                                             |
