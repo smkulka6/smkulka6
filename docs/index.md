@@ -1,6 +1,4 @@
----
-title: Welcome
----
+
 
 # Siddhant Kulkarni Project Repository
 
