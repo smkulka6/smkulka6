@@ -85,7 +85,7 @@ These additional components play a vital role in ensuring the stability and reli
 
 ## MPLAB Test
 
-![MPLAB Image Placeholder](path/to/your/image.png)
+![MPLAB](docs/subfolder/MP_Lab Screenshot.png)
 
 ---
 
