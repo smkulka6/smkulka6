@@ -525,11 +525,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-water-generator-turbine-used-as-a-motor" class="md-nav__link">
-    4. Water Generator Turbine (Used as a Motor)
+  <a href="#4-motor-pump" class="md-nav__link">
+    4. Motor Pump
   </a>
   
-    <nav class="md-nav" aria-label="4. Water Generator Turbine (Used as a Motor)">
+    <nav class="md-nav" aria-label="4. Motor Pump">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -566,8 +566,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#pin-allocation-code" class="md-nav__link">
-    Pin Allocation Code
+  <a href="#pin-allocation" class="md-nav__link">
+    Pin Allocation
   </a>
   
 </li>
@@ -775,11 +775,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-water-generator-turbine-used-as-a-motor" class="md-nav__link">
-    4. Water Generator Turbine (Used as a Motor)
+  <a href="#4-motor-pump" class="md-nav__link">
+    4. Motor Pump
   </a>
   
-    <nav class="md-nav" aria-label="4. Water Generator Turbine (Used as a Motor)">
+    <nav class="md-nav" aria-label="4. Motor Pump">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -816,8 +816,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#pin-allocation-code" class="md-nav__link">
-    Pin Allocation Code
+  <a href="#pin-allocation" class="md-nav__link">
+    Pin Allocation
   </a>
   
 </li>
@@ -847,7 +847,7 @@
 
 <h1 id="major-component-selection-comparison">Major Component Selection &amp; Comparison</h1>
 <h2 id="1-motor-driver">1. Motor Driver</h2>
-<p>The motor driver is a critical component for controlling the direction and speed of the motor. Since my design requires bidirectional control of a motor (using a generator as a motor), I needed a motor driver with high efficiency, integrated protection features, and compatibility with my microcontroller. I considered multiple options before finalizing my choice, ensuring that the selected component met my design criteria.</p>
+<p>The motor driver is a critical component for controlling the direction and speed of the motor. Since my design requires bidirectional control of a motor, I needed a motor driver with high efficiency, integrated protection features, and compatibility with my microcontroller. I considered multiple options before finalizing my choice, ensuring that the selected component met my design criteria.</p>
 <h3 id="component-options">Component Options</h3>
 <table>
 <thead>
@@ -941,8 +941,8 @@ I chose the LMS8117AMP-3.3 regulator because it is cost-effective, easy to imple
 <p><strong>Chosen Microcontroller:</strong> <strong>PIC18F47Q10</strong></p>
 <p>This selection ensures efficient communication and control of the motor driver and voltage regulation system, maintaining seamless functionality within the project.</p>
 <hr />
-<h2 id="4-water-generator-turbine-used-as-a-motor">4. Water Generator Turbine (Used as a Motor)</h2>
-<p>In my design, I am repurposing a water generator turbine to function as a bidirectional motor. This choice is based on the need for a compact, efficient motor with built-in water resistance, making it ideal for my application.</p>
+<h2 id="4-motor-pump">4. Motor Pump</h2>
+<p>In my design, I am repurposing a Motor Pump to function as a bidirectional motor. This choice is based on the need for a compact, efficient motor with built-in water resistance, making it ideal for my application.</p>
 <h3 id="component-option">Component Option</h3>
 <table>
 <thead>
@@ -986,9 +986,67 @@ The SEN0229 is originally designed as a generator but can function as a motor wh
 <h2 id="mplab-test">MPLAB Test</h2>
 <p><a class="glightbox" href="path/to/your/image.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="MPLAB Image Placeholder" src="path/to/your/image.png" /></a></p>
 <hr />
-<h2 id="pin-allocation-code">Pin Allocation Code</h2>
-<p>```c
-// Add your pin allocation code here</p>
+<h2 id="pin-allocation">Pin Allocation</h2>
+<table>
+<thead>
+<tr>
+<th>Module</th>
+<th># Available</th>
+<th>Needed</th>
+<th>Associated Pins (or * for any)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GPIO</td>
+<td>21</td>
+<td>5</td>
+<td>RC_2 , RC_3 , RC_4 , RA_5 , RA_6</td>
+</tr>
+<tr>
+<td>ADC</td>
+<td>10</td>
+<td>0</td>
+<td>...</td>
+</tr>
+<tr>
+<td>UART</td>
+<td>2</td>
+<td>2</td>
+<td>RX-RC_6 , TX-RC_7</td>
+</tr>
+<tr>
+<td>SPI</td>
+<td>2</td>
+<td>2</td>
+<td>SI-RC_4 , SO-RC_5</td>
+</tr>
+<tr>
+<td>I2C</td>
+<td>2</td>
+<td>0</td>
+<td>...</td>
+</tr>
+<tr>
+<td>PWM</td>
+<td>?</td>
+<td>?</td>
+<td>...</td>
+</tr>
+<tr>
+<td>ICSP</td>
+<td>3</td>
+<td>3</td>
+<td>RB-6,RB-7,MCLR</td>
+</tr>
+<tr>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+</tbody>
+</table>
 
 
 
