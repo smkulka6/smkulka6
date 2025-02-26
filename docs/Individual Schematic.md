@@ -1,8 +1,8 @@
 # Schematic Diagram
 
 
-![Schematic Diagram](./docs/subfolder/Schematic.png)
+![Schematic Diagram](Schematic.png)
 
 You can download the PDF version of the schematic by clicking the link below:
 
-[Download PDF Schematic](./path/to/your-schematic.pdf)
+[Download PDF Schematic](Schematic SK.pdf)
