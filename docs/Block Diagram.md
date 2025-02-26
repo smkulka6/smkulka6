@@ -5,5 +5,5 @@
 
 You can download the PDF version of the Block Diagram by clicking the link below:
 
-[Download PDF Schematic](./subfolder/Motor_driver.pdf)
+[Download Block Diagram](./subfolder/Motor_driver.pdf)
 
