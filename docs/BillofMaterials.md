@@ -7,7 +7,7 @@
 | 61301411021 | 3 | $0.00 | $0.00 | $0.00 | $0.00 | Peralta Lab | 61301411021 | Peralta Lab | Peralta Lab | Peralta Lab | Peralta Lab | 0 | 2/28/2025 | | -3 | Connector IN, Connector OUT, Snap Programmer |
 | Inductor | 1 | $0.00 | $0.00 | $0.00 | $0.00 | Peralta Lab | Inductor | Peralta Lab | Peralta Lab | Peralta Lab | Peralta Lab | 0 | 2/28/2025 | | -1 | L |
 | Light-Emitting Diode | 3 | $0.00 | $0.00 | $0.00 | $0.00 | Peralta Lab | LED | Peralta Lab | Peralta Lab | Peralta Lab | Peralta Lab | 0 | 2/28/2025 | | -3 | LED- PIC Debug, LED- Power Debug |
-| DC Motor | 1 | $0.00 | $0.00 | $0.00 | $0.00 | Peralta Lab | DC Motor | Peralta Lab | Peralta Lab | Peralta Lab | Peralta Lab | 0 | 2/28/2025 | | -1 | Motor Pump |
+| DC Motor | 1 | $8.10 | $8.10 | $0.00 | $0.00 | DFrobot | 1738-1315-ND | Digikey | Datasheet | Digikey |  | 3 | 2/28/2025 | | -1 | Motor Pump |
 | Resistor | 5 | $0.00 | $0.00 | $0.00 | $0.00 | Peralta Lab | Resistor | Peralta Lab | Peralta Lab | Peralta Lab | Peralta Lab | 0 | 2/28/2025 | | -5 | R1, R6, R7, R? |
 | Switch Normally Opened | 1 | $0.00 | $0.00 | $0.00 | $0.00 | Peralta Lab | Switch NO | Peralta Lab | Peralta Lab | Peralta Lab | Peralta Lab | 0 | 2/28/2025 | | -1 | S? |
 | AP63203WU-7 | 1 | $1.38 | $1.38 | $0.00 | $0.00 | Diodes Incorporated | AP63203WU-7 | Digikey | Datasheet | Digikey | AP63203WU-7DITR-ND | 5 | 2/28/2025 | | -1 | U1 |
@@ -17,7 +17,7 @@
 | DC 9 | 1 | $0.00 | $0.00 | $0.00 | $0.00 | Peralta Lab | DC 9 | Peralta Lab | Peralta Lab | Peralta Lab | Peralta Lab | 0 | 2/28/2025 | | -1 | VSRC |
 | DC 5 | 1 | $0.00 | $0.00 | $0.00 | $0.00 | Peralta Lab | DC 5 | Peralta Lab | Peralta Lab | Peralta Lab | Peralta Lab | 0 | 2/28/2025 | | -1 | VSRC |
 
-**Total Cost:** $41.38
+**Total Cost:** $65.38
 
 [Excel Sheet BOM ](https://docs.google.com/spreadsheets/d/156U78wOTZNQjrQSCz7AoKw_OFbUZ7FwH/edit?usp=sharing&ouid=107614409505094169035&rtpof=true&sd=true)
 
