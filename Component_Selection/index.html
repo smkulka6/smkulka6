@@ -501,9 +501,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-microcontroller-selection-pin-allocation" class="md-nav__link">
-    3. Microcontroller Selection &amp; Pin Allocation
+  <a href="#3-microcontroller-selection" class="md-nav__link">
+    3. Microcontroller Selection
   </a>
+  
+    <nav class="md-nav" aria-label="3. Microcontroller Selection">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#component-options_2" class="md-nav__link">
+    Component Options
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -516,7 +529,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#component-options_2" class="md-nav__link">
+  <a href="#component-options_3" class="md-nav__link">
     Component Options
   </a>
   
@@ -739,9 +752,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-microcontroller-selection-pin-allocation" class="md-nav__link">
-    3. Microcontroller Selection &amp; Pin Allocation
+  <a href="#3-microcontroller-selection" class="md-nav__link">
+    3. Microcontroller Selection
   </a>
+  
+    <nav class="md-nav" aria-label="3. Microcontroller Selection">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#component-options_2" class="md-nav__link">
+    Component Options
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -754,7 +780,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#component-options_2" class="md-nav__link">
+  <a href="#component-options_3" class="md-nav__link">
     Component Options
   </a>
   
@@ -835,6 +861,7 @@
 <th>Pros</th>
 <th>Cons</th>
 <th>Cost</th>
+<th>Image</th>
 <th>Link</th>
 </tr>
 </thead>
@@ -842,25 +869,28 @@
 <tr>
 <td>IFX9201SGAUMA1</td>
 <td>Intelligent motor driver IC</td>
-<td>- High efficiency, integrated protections, supports bidirectional motor control<br>- Designed for automotive and industrial applications, ensuring durability<br>- Compact design with minimal external components</td>
-<td>- Higher cost than simpler motor drivers<br>- Requires careful PCB layout for optimal performance</td>
+<td>- High efficiency, integrated protections, supports bidirectional motor control <br> - Designed for automotive and industrial applications, ensuring durability <br> - Compact design with minimal external components</td>
+<td>- Higher cost than simpler motor drivers <br> - Requires careful PCB layout for optimal performance</td>
 <td>$4.50</td>
+<td><a class="glightbox" href="images/ifx9201.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="IFX9201" src="images/ifx9201.png" /></a></td>
 <td><a href="#">IFX9201 Datasheet</a></td>
 </tr>
 <tr>
 <td>DRV8835</td>
 <td>Dual H-Bridge motor driver, supports low voltage</td>
-<td>- Compact, efficient, supports PWM<br>- Simple implementation with minimal external circuitry</td>
-<td>- Lower current limit than other options, limiting motor selection<br>- May require external protection components</td>
+<td>- Compact, efficient, supports PWM <br> - Simple implementation with minimal external circuitry</td>
+<td>- Lower current limit than other options, limiting motor selection <br> - May require external protection components</td>
 <td>$2.50</td>
+<td><a class="glightbox" href="images/drv8835.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="DRV8835" src="images/drv8835.png" /></a></td>
 <td><a href="#">DRV8835 Datasheet</a></td>
 </tr>
 <tr>
 <td>TB6612FNG</td>
 <td>Motor driver with built-in MOSFETs</td>
-<td>- High efficiency, good for small motors, easy to use<br>- Can drive two motors independently</td>
-<td>- Slightly larger footprint<br>- Lower power handling capability compared to IFX9201</td>
+<td>- High efficiency, good for small motors, easy to use <br> - Can drive two motors independently</td>
+<td>- Slightly larger footprint <br> - Lower power handling capability compared to IFX9201</td>
 <td>$3.00</td>
+<td><a class="glightbox" href="images/tb6612fng.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="TB6612FNG" src="images/tb6612fng.png" /></a></td>
 <td><a href="#">TB6612FNG Datasheet</a></td>
 </tr>
 </tbody>
@@ -880,6 +910,7 @@ I selected the IFX9201SGAUMA1 motor driver because it offers robust protection f
 <th>Pros</th>
 <th>Cons</th>
 <th>Cost</th>
+<th>Image</th>
 <th>Link</th>
 </tr>
 </thead>
@@ -887,40 +918,38 @@ I selected the IFX9201SGAUMA1 motor driver because it offers robust protection f
 <tr>
 <td>AP63203WU-7</td>
 <td>Switching regulator, 9V-12V to 3.3V</td>
-<td>- High efficiency (~88-90%), minimal heat dissipation  <br> - Integrated inductor simplifies PCB design  <br> - Compact, reducing board space requirements</td>
-<td>- Requires careful layout for optimal performance  <br> - Slightly more expensive than linear regulators</td>
+<td>- High efficiency (~88-90%), minimal heat dissipation <br> - Integrated inductor simplifies PCB design <br> - Compact, reducing board space requirements</td>
+<td>- Requires careful layout for optimal performance <br> - Slightly more expensive than linear regulators</td>
 <td>$2.00</td>
+<td><a class="glightbox" href="images/ap63203.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="AP63203" src="images/ap63203.png" /></a></td>
 <td><a href="#">AP63203WU-7 Datasheet</a></td>
 </tr>
 <tr>
 <td>MIC4680-3.3</td>
 <td>Switching regulator</td>
-<td>- High efficiency, small size, better thermal performance  <br> - Reduced power loss, ideal for battery-operated designs</td>
-<td>- Slightly complex implementation  <br> - More expensive than linear regulators</td>
+<td>- High efficiency, small size, better thermal performance <br> - Reduced power loss, ideal for battery-operated designs</td>
+<td>- Slightly complex implementation <br> - More expensive than linear regulators</td>
 <td>$3.50</td>
+<td><a class="glightbox" href="images/mic4680.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="MIC4680" src="images/mic4680.png" /></a></td>
 <td><a href="#">MIC4680 Datasheet</a></td>
 </tr>
 <tr>
 <td>MP2359</td>
 <td>Step-down converter</td>
-<td>- Compact, efficient, good power management  <br> - Works well with higher input voltages</td>
-<td>- Requires more external components, increasing PCB complexity  <br> - Design complexity compared to linear regulators</td>
+<td>- Compact, efficient, good power management <br> - Works well with higher input voltages</td>
+<td>- Requires more external components, increasing PCB complexity <br> - Design complexity compared to linear regulators</td>
 <td>$2.50</td>
+<td><a class="glightbox" href="images/mp2359.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="MP2359" src="images/mp2359.png" /></a></td>
 <td><a href="#">MP2359 Datasheet</a></td>
 </tr>
 </tbody>
 </table>
+<hr />
 <p><strong>Chosen Component:</strong> <strong>AP63203WU-7</strong>  </p>
 <p><strong>Rationale:</strong><br />
 I selected the AP63203WU-7 because it offers high efficiency with minimal heat dissipation, making it ideal for my system’s power requirements. Its integrated inductor reduces PCB complexity, and its compact size helps optimize board space. This component provides a good balance between performance, cost, and ease of implementation.</p>
 <hr />
-<h2 id="3-microcontroller-selection-pin-allocation">3. Microcontroller Selection &amp; Pin Allocation</h2>
-<p>My design requires a microcontroller that supports PWM, UART, and SPI communication while offering sufficient GPIOs for motor control and sensor interfacing. After careful evaluation, I selected the <strong>PIC18F47Q10</strong> due to its compatibility with my motor driver and other components.</p>
-<p><strong>Chosen Microcontroller:</strong> <strong>PIC18F47Q10</strong></p>
-<p>This selection ensures efficient communication and control of the motor driver and voltage regulation system, maintaining seamless functionality within the project.</p>
-<hr />
-<h2 id="4-motor-pump">4. Motor Pump</h2>
-<p>In my design, I am repurposing a Motor Pump to function as a bidirectional motor. This choice is based on the need for a compact, efficient motor with built-in water resistance, making it ideal for my application.  </p>
+<h2 id="3-microcontroller-selection">3. Microcontroller Selection</h2>
 <h3 id="component-options_2">Component Options</h3>
 <table>
 <thead>
@@ -930,6 +959,56 @@ I selected the AP63203WU-7 because it offers high efficiency with minimal heat d
 <th>Pros</th>
 <th>Cons</th>
 <th>Cost</th>
+<th>Image</th>
+<th>Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>PIC18F47Q10</strong></td>
+<td>8-bit microcontroller with multiple I/O</td>
+<td>- Supports PWM, UART, and SPI <br> - Low power consumption</td>
+<td>- Limited processing power compared to ARM-based MCUs</td>
+<td>$5.00</td>
+<td><a class="glightbox" href="images/pic18f47q10.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="PIC18F47Q10" src="images/pic18f47q10.png" /></a></td>
+<td><a href="#">PIC18F47Q10 Datasheet</a></td>
+</tr>
+<tr>
+<td><strong>ESP32-WROOM-32</strong></td>
+<td>32-bit microcontroller with WiFi &amp; Bluetooth</td>
+<td>- High processing power <br> - Built-in WiFi/Bluetooth <br> - Multiple GPIOs and peripherals</td>
+<td>- Higher power consumption <br> - Requires more complex firmware development</td>
+<td>$6.50</td>
+<td><a class="glightbox" href="images/esp32.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="ESP32" src="images/esp32.png" /></a></td>
+<td><a href="#">ESP32 Datasheet</a></td>
+</tr>
+<tr>
+<td><strong>ATmega328P</strong></td>
+<td>8-bit microcontroller used in Arduino</td>
+<td>- Low power consumption <br> - Simple firmware development <br> - Widely available</td>
+<td>- Fewer peripherals compared to ESP32 <br> - Slower processing speed</td>
+<td>$3.00</td>
+<td><a class="glightbox" href="images/atmega328p.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="ATmega328P" src="images/atmega328p.png" /></a></td>
+<td><a href="#">ATmega328P Datasheet</a></td>
+</tr>
+</tbody>
+</table>
+<p>My design requires a microcontroller that supports PWM, UART, and SPI communication while offering sufficient GPIOs for motor control and sensor interfacing. After careful evaluation, I selected the <strong>PIC18F47Q10</strong> due to its compatibility with my motor driver and other components.</p>
+<p><strong>Chosen Microcontroller:</strong> <strong>PIC18F47Q10</strong></p>
+<p>This selection ensures efficient communication and control of the motor driver and voltage regulation system, maintaining seamless functionality within the project.</p>
+<hr />
+<h2 id="4-motor-pump">4. Motor Pump</h2>
+<p>In my design, I am repurposing a Motor Pump to function as a bidirectional motor. This choice is based on the need for a compact, efficient motor with built-in water resistance, making it ideal for my application.  </p>
+<h3 id="component-options_3">Component Options</h3>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Description</th>
+<th>Pros</th>
+<th>Cons</th>
+<th>Cost</th>
+<th>Image</th>
 <th>Link</th>
 </tr>
 </thead>
@@ -937,25 +1016,28 @@ I selected the AP63203WU-7 because it offers high efficiency with minimal heat d
 <tr>
 <td>SEN0229</td>
 <td>Water generator turbine repurposed as a motor</td>
-<td>- Provides high torque for its size  <br> - Compact, water-resistant, and durable</td>
-<td>- Designed primarily as a generator, requiring control adjustments  <br> - Potential efficiency losses when used as a motor</td>
+<td>- Provides high torque for its size <br> - Compact, water-resistant, and durable</td>
+<td>- Designed primarily as a generator, requiring control adjustments <br> - Potential efficiency losses when used as a motor</td>
 <td>$12.00</td>
+<td><a class="glightbox" href="images/sen0229.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="SEN0229" src="images/sen0229.png" /></a></td>
 <td><a href="#">SEN0229 Datasheet</a></td>
 </tr>
 <tr>
 <td>JGA25-371</td>
 <td>DC gear motor with bidirectional control</td>
-<td>- High torque and efficiency  <br> - Compact size with built-in gearbox</td>
-<td>- Not inherently water-resistant  <br> - Requires additional sealing for wet environments</td>
+<td>- High torque and efficiency <br> - Compact size with built-in gearbox</td>
+<td>- Not inherently water-resistant <br> - Requires additional sealing for wet environments</td>
 <td>$15.00</td>
+<td><a class="glightbox" href="images/jga25-371.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="JGA25-371" src="images/jga25-371.png" /></a></td>
 <td><a href="#">JGA25-371 Datasheet</a></td>
 </tr>
 <tr>
 <td>RS-385</td>
 <td>Small brushed DC motor</td>
-<td>- Affordable and widely available  <br> - Can be used with bidirectional motor drivers</td>
-<td>- Lower torque output compared to geared motors  <br> - Not water-resistant</td>
+<td>- Affordable and widely available <br> - Can be used with bidirectional motor drivers</td>
+<td>- Lower torque output compared to geared motors <br> - Not water-resistant</td>
 <td>$8.00</td>
+<td><a class="glightbox" href="images/rs-385.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="RS-385" src="images/rs-385.png" /></a></td>
 <td><a href="#">RS-385 Datasheet</a></td>
 </tr>
 </tbody>
@@ -978,7 +1060,7 @@ The SEN0229 is originally designed as a generator but can function as a motor wh
 <p>These additional components play a vital role in ensuring the stability and reliability of the overall system.</p>
 <hr />
 <h2 id="mplab-test">MPLAB Test</h2>
-<p><a class="glightbox" href="docs/subfolder/MP_Lab Screenshot.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="MPLAB" src="docs/subfolder/MP_Lab Screenshot.png" /></a></p>
+<p><a class="glightbox" href="MP_Lab Screenshot.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="MPLAB" src="MP_Lab Screenshot.png" /></a></p>
 <hr />
 <h2 id="pin-allocation">Pin Allocation</h2>
 <table>
