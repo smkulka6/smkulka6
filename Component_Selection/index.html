@@ -870,7 +870,7 @@
 I selected the IFX9201SGAUMA1 motor driver because it offers robust protection features such as overcurrent and thermal protection, making it reliable for my design. Additionally, it supports bidirectional control, which is crucial for my use of a water generator turbine as a reversible motor. Its high efficiency and integrated fault detection make it an optimal choice despite its slightly higher cost.</p>
 <hr />
 <h2 id="2-voltage-regulator">2. Voltage Regulator</h2>
-<p>The voltage regulator ensures that my microcontroller and other components receive a stable 3.3V power supply. Given my system’s 9V-12V input voltage, I evaluated both linear and switching regulators to determine the best balance between efficiency and simplicity.</p>
+<p>The voltage regulator ensures that my microcontroller and other components receive a stable 3.3V power supply. Given my system’s 9V-12V input voltage, I evaluated both linear and switching regulators to determine the best balance between efficiency and simplicity.  </p>
 <h3 id="component-options_1">Component Options</h3>
 <table>
 <thead>
@@ -885,34 +885,34 @@ I selected the IFX9201SGAUMA1 motor driver because it offers robust protection f
 </thead>
 <tbody>
 <tr>
-<td>LMS8117AMP-3.3</td>
-<td>Linear voltage regulator, 9V-12V to 3.3V</td>
-<td>- Simple design, low noise, easy to implement<br>- Readily available and cost-effective</td>
-<td>- Higher heat dissipation compared to switching regulators<br>- Less efficient at higher input voltages</td>
-<td>$1.50</td>
-<td><a href="#">LMS8117AMP-3.3 Datasheet</a></td>
+<td>AP63203WU-7</td>
+<td>Switching regulator, 9V-12V to 3.3V</td>
+<td>- High efficiency (~88-90%), minimal heat dissipation  <br> - Integrated inductor simplifies PCB design  <br> - Compact, reducing board space requirements</td>
+<td>- Requires careful layout for optimal performance  <br> - Slightly more expensive than linear regulators</td>
+<td>$2.00</td>
+<td><a href="#">AP63203WU-7 Datasheet</a></td>
 </tr>
 <tr>
 <td>MIC4680-3.3</td>
 <td>Switching regulator</td>
-<td>- High efficiency, small size, better thermal performance<br>- Reduced power loss, ideal for battery-operated designs</td>
-<td>- Slightly complex implementation<br>- More expensive than linear regulators</td>
+<td>- High efficiency, small size, better thermal performance  <br> - Reduced power loss, ideal for battery-operated designs</td>
+<td>- Slightly complex implementation  <br> - More expensive than linear regulators</td>
 <td>$3.50</td>
 <td><a href="#">MIC4680 Datasheet</a></td>
 </tr>
 <tr>
 <td>MP2359</td>
 <td>Step-down converter</td>
-<td>- Compact, efficient, good power management<br>- Works well with higher input voltages</td>
-<td>- Requires more external components, increasing PCB complexity<br>- Design complexity compared to linear regulators</td>
+<td>- Compact, efficient, good power management  <br> - Works well with higher input voltages</td>
+<td>- Requires more external components, increasing PCB complexity  <br> - Design complexity compared to linear regulators</td>
 <td>$2.50</td>
 <td><a href="#">MP2359 Datasheet</a></td>
 </tr>
 </tbody>
 </table>
-<p><strong>Chosen Component:</strong> <strong>LMS8117AMP-3.3</strong></p>
+<p><strong>Chosen Component:</strong> <strong>AP63203WU-7</strong>  </p>
 <p><strong>Rationale:</strong><br />
-I chose the LMS8117AMP-3.3 regulator because it is cost-effective, easy to implement, and provides stable power with minimal noise. While it has higher heat dissipation, my design can accommodate the necessary heat sinking. Its simplicity makes it ideal for ensuring reliable operation without additional complexity.</p>
+I selected the AP63203WU-7 because it offers high efficiency with minimal heat dissipation, making it ideal for my system’s power requirements. Its integrated inductor reduces PCB complexity, and its compact size helps optimize board space. This component provides a good balance between performance, cost, and ease of implementation.</p>
 <hr />
 <h2 id="3-microcontroller-selection-pin-allocation">3. Microcontroller Selection &amp; Pin Allocation</h2>
 <p>My design requires a microcontroller that supports PWM, UART, and SPI communication while offering sufficient GPIOs for motor control and sensor interfacing. After careful evaluation, I selected the <strong>PIC18F47Q10</strong> due to its compatibility with my motor driver and other components.</p>
