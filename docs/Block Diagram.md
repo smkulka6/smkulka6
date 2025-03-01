@@ -1,8 +1,8 @@
 # Block Diagram
 
 
-![BlockDiagram](Block_Diagram.drawio.png)
+![BlockDiagram](BlockDiagram.png)
 You can download the PDF version of the Block Diagram by clicking the link below:
 
-[Download PDF Schematic](Motor_driver.pdf)
+[Download PDF Schematic](BlockDiagram.pdf)
 
