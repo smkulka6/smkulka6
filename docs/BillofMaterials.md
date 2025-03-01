@@ -21,4 +21,6 @@
 
 [Excel Sheet BOM ](https://docs.google.com/spreadsheets/d/15jXAXBXpmTbjrGjso7ABhld2auJOA4Gt0rnLwpOWp34/edit?usp=sharing)
 
+[Purchase Request](Purchase.pdf)
+
 
