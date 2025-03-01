@@ -48,15 +48,18 @@ This selection ensures efficient communication and control of the motor driver a
 
 ---
 
-## 4. Motor Pump
+## 4. Motor Pump  
 
-In my design, I am repurposing a Motor Pump to function as a bidirectional motor. This choice is based on the need for a compact, efficient motor with built-in water resistance, making it ideal for my application.
+In my design, I am repurposing a Motor Pump to function as a bidirectional motor. This choice is based on the need for a compact, efficient motor with built-in water resistance, making it ideal for my application.  
 
-### Component Option
+### Component Options  
 
-| Component | Description                                  | Pros                                                                                         | Cons                                                                                      | Cost   | Link                         |
-|-----------|----------------------------------------------|----------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|--------|------------------------------|
-| SEN0229   | Water generator turbine repurposed as a motor | - Provides high torque for its size<br>- Compact, water-resistant, and durable                | - Designed primarily as a generator, requiring control adjustments<br>- Potential efficiency losses when used as a motor | $12.00 | [SEN0229 Datasheet](#)       |
+| Component   | Description                                      | Pros                                                                                         | Cons                                                                                      | Cost   | Link                         |  
+|------------|--------------------------------------------------|----------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|--------|------------------------------|  
+| SEN0229    | Water generator turbine repurposed as a motor   | - Provides high torque for its size  <br> - Compact, water-resistant, and durable            | - Designed primarily as a generator, requiring control adjustments  <br> - Potential efficiency losses when used as a motor | $12.00 | [SEN0229 Datasheet](#)       |  
+| JGA25-371  | DC gear motor with bidirectional control        | - High torque and efficiency  <br> - Compact size with built-in gearbox                      | - Not inherently water-resistant  <br> - Requires additional sealing for wet environments | $15.00 | [JGA25-371 Datasheet](#)     |  
+| RS-385     | Small brushed DC motor                          | - Affordable and widely available  <br> - Can be used with bidirectional motor drivers       | - Lower torque output compared to geared motors  <br> - Not water-resistant               | $8.00  | [RS-385 Datasheet](#)        |  
+
 
 **Rationale:**  
 The SEN0229 is originally designed as a generator but can function as a motor when electrical power is applied. Its robust design and ability to operate in wet environments make it an innovative choice for this application. The IFX9201SGAUMA1 motor driver allows for precise control of the SEN0229 in bidirectional mode, ensuring smooth operation. This approach offers a unique way to utilize an existing component creatively, reducing the need for additional mechanical modifications.
