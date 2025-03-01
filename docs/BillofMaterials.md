@@ -19,6 +19,6 @@
 
 **Total Cost:** $65.38
 
-[Excel Sheet BOM ](https://docs.google.com/spreadsheets/d/156U78wOTZNQjrQSCz7AoKw_OFbUZ7FwH/edit?usp=sharing&ouid=107614409505094169035&rtpof=true&sd=true)
+[Excel Sheet BOM ](https://docs.google.com/spreadsheets/d/15jXAXBXpmTbjrGjso7ABhld2auJOA4Gt0rnLwpOWp34/edit?usp=sharing)
 
-[Excel Sheet Vendor ](https://docs.google.com/spreadsheets/d/156U78wOTZNQjrQSCz7AoKw_OFbUZ7FwH/edit?usp=sharing&ouid=107614409505094169035&rtpof=true&sd=true)
+
