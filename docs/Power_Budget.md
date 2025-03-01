@@ -6,9 +6,9 @@ Below is the power budget analysis for our system, detailing voltage, current, a
 
 | **Component**                           | **Voltage (V)**     | **Current (A)**        | **Power (W) = V × A** |
 |-----------------------------------------|---------------------|------------------------|-----------------------|
-| SEN0229 Motor                           | 3.3V                | 0.5A                   | 1.65W                 |
-| PIC18F47Q10                             | 3.3V                | 0.04A                  | 0.132W                |
-| AP63203WU-7 (Buck Reg.)                 | 12V input → 3.3V output | 0.3A*             | 1.188W                |
+| SEN0229 Motor                           | 3.3V                | 0.2A                   | 0.66W                 |
+| PIC18F47Q10                             | 3.3V                | 0.250A                  | 0.825W                |
+| AP63203WU-7 (Buck Reg.)                 | 12V input → 3.3V output | 0.3A*             | 3.06W (Input)         |
 | Motor Driver IFX9201SGAUMA1             | 3.3V                | 0.1A                   | 0.33W                 |
 | LED Debug (2x LEDs)                     | 3.3V                | 0.02A (each)           | 0.132W                |
 | 10µF Capacitor (C1)                     | Passive             | Negligible             | 0W                    |
@@ -28,8 +28,11 @@ Below is the power budget analysis for our system, detailing voltage, current, a
 
 ### At 3.3V Load:
 - **Total Current Draw**: ~0.68A  
-- **Total Power (3.3V Side)**: ~2.24W
+- **Total Power (3.3V Side)**: ~1.98W
 
-- 
+## Power Budget Link for Excel Sheet
+
+[Power Budget ](https://docs.google.com/spreadsheets/d/156U78wOTZNQjrQSCz7AoKw_OFbUZ7FwH/edit?usp=sharing&ouid=107614409505094169035&rtpof=true&sd=true)
+
 
 
