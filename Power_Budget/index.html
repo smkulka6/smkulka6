@@ -29,7 +29,7 @@
 
     
       
-        <title>Power Budget - EGR314 Report Template</title>
+        <title>Power Budget Calculation ⚡ - EGR314 Report Template</title>
       
     
     
@@ -92,6 +92,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#power-budget-calculation" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -123,7 +128,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Power Budget
+              Power Budget Calculation ⚡
             
           </span>
         </div>
@@ -306,7 +311,7 @@
   
     
   
-  Power Budget
+  Power Budget Calculation ⚡
 
       </a>
     </li>
@@ -509,16 +514,75 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Power Budget Calculation ⚡
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    Power Budget
+    Power Budget Calculation ⚡
   </span>
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#component-power-breakdown" class="md-nav__link">
+    Component Power Breakdown
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#total-power-consumption" class="md-nav__link">
+    Total Power Consumption
+  </a>
+  
+    <nav class="md-nav" aria-label="Total Power Consumption">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#at-33v-load" class="md-nav__link">
+    At 3.3V Load:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -586,6 +650,43 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#component-power-breakdown" class="md-nav__link">
+    Component Power Breakdown
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#total-power-consumption" class="md-nav__link">
+    Total Power Consumption
+  </a>
+  
+    <nav class="md-nav" aria-label="Total Power Consumption">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#at-33v-load" class="md-nav__link">
+    At 3.3V Load:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -608,9 +709,132 @@
   
 
 
-  <h1>Power Budget</h1>
-
-
+<h1 id="power-budget-calculation">Power Budget Calculation ⚡</h1>
+<p>Below is the power budget analysis for our system, detailing voltage, current, and power consumption for each component.</p>
+<h2 id="component-power-breakdown">Component Power Breakdown</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Component</strong></th>
+<th><strong>Voltage (V)</strong></th>
+<th><strong>Current (A)</strong></th>
+<th><strong>Power (W) = V × A</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SEN0229 Motor</td>
+<td>3.3V</td>
+<td>0.5A</td>
+<td>1.65W</td>
+</tr>
+<tr>
+<td>PIC18F47Q10</td>
+<td>3.3V</td>
+<td>0.04A</td>
+<td>0.132W</td>
+</tr>
+<tr>
+<td>AP63203WU-7 (Buck Reg.)</td>
+<td>12V input → 3.3V output</td>
+<td>0.3A*</td>
+<td>1.188W</td>
+</tr>
+<tr>
+<td>Motor Driver IFX9201SGAUMA1</td>
+<td>3.3V</td>
+<td>0.1A</td>
+<td>0.33W</td>
+</tr>
+<tr>
+<td>LED Debug (2x LEDs)</td>
+<td>3.3V</td>
+<td>0.02A (each)</td>
+<td>0.132W</td>
+</tr>
+<tr>
+<td>10µF Capacitor (C1)</td>
+<td>Passive</td>
+<td>Negligible</td>
+<td>0W</td>
+</tr>
+<tr>
+<td>10µF 50V Capacitor (C2)</td>
+<td>Passive</td>
+<td>Negligible</td>
+<td>0W</td>
+</tr>
+<tr>
+<td>0.1µF 25V Capacitor (C3)</td>
+<td>Passive</td>
+<td>Negligible</td>
+<td>0W</td>
+</tr>
+<tr>
+<td>2×22µF Capacitor (C4)</td>
+<td>Passive</td>
+<td>Negligible</td>
+<td>0W</td>
+</tr>
+<tr>
+<td>Inductor (3.9µH, L1)</td>
+<td>Passive</td>
+<td>Negligible</td>
+<td>0W</td>
+</tr>
+<tr>
+<td>Resistor 10kΩ (R1, R2)</td>
+<td>3.3V</td>
+<td>0.33mA (each)</td>
+<td>0.002W</td>
+</tr>
+<tr>
+<td>Resistor 220kΩ (R3, R4)</td>
+<td>3.3V</td>
+<td>0.015mA (each)</td>
+<td>0.00005W</td>
+</tr>
+<tr>
+<td>Fuse Block (02981001ZXT)</td>
+<td>32V Max</td>
+<td>Passive</td>
+<td>0W (unless tripped)</td>
+</tr>
+<tr>
+<td><strong>Through Hole Barrel Jack</strong></td>
+<td>9V Input</td>
+<td>-</td>
+<td>0W (Power Input)</td>
+</tr>
+<tr>
+<td>Jumpers (J1, J2)</td>
+<td>-</td>
+<td>Passive</td>
+<td>0W</td>
+</tr>
+<tr>
+<td>DOWNSTREAM Connector (P1)</td>
+<td>-</td>
+<td>-</td>
+<td>0W</td>
+</tr>
+<tr>
+<td>UPSTREAM Connector (P2)</td>
+<td>-</td>
+<td>-</td>
+<td>0W</td>
+</tr>
+</tbody>
+</table>
+<h2 id="total-power-consumption">Total Power Consumption</h2>
+<h3 id="at-33v-load">At 3.3V Load:</h3>
+<ul>
+<li><strong>Total Current Draw</strong>: ~0.68A  </li>
+<li>
+<p><strong>Total Power (3.3V Side)</strong>: ~2.24W</p>
+</li>
+<li></li>
+</ul>
 
 
 
