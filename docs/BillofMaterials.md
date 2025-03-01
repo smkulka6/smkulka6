@@ -12,7 +12,7 @@
 | Switch Normally Opened | 1 | $0.00 | $0.00 | $0.00 | $0.00 | Peralta Lab | Switch NO | Peralta Lab | Peralta Lab | Peralta Lab | Peralta Lab | 0 | 2/28/2025 | | -1 | S? |
 | AP63203WU-7 | 1 | $1.38 | $1.38 | $0.00 | $0.00 | Diodes Incorporated | AP63203WU-7 | Digikey | Datasheet | Digikey | AP63203WU-7DITR-ND | 5 | 2/28/2025 | | -1 | U1 |
 | IFX9201SGAUMA1 | 1 | $3.70 | $3.70 | $0.00 | $0.00 | Infineon | IFX9201SGAUMA1 | Digikey | Datasheet | Digikey | IFX9201SGAUMA1 | 5 | 2/28/2025 | | -1 | U2 |
-| PIC18F47Q10-I/PT | 1 | $3.20 | $0.00 | $0.00 | $0.00 | Microchip | PIC18F47Q10-I/PT | Digikey | Datasheet | Digikey | PIC18F47Q10-I/PT | 5 | 2/28/2025 | | -1 | U3 |
+| PIC18F47Q10-I/PT | 1 | $3.20 | $3.20 | $0.00 | $0.00 | Microchip | PIC18F47Q10-I/PT | Digikey | Datasheet | Digikey | PIC18F47Q10-I/PT | 5 | 2/28/2025 | | -1 | U3 |
 | 61301411021 | 9 | $0.00 | $0.00 | $0.00 | $0.00 | Peralta Lab | 61301411021 | Peralta Lab | Peralta Lab | Peralta Lab | Peralta Lab | 0 | 2/28/2025 | | -9 | Test point-OUT2, Test-MCLR, Test-PGC, Test-PGD, Test-point CSN, Test-Point OUT1, Test-point SCK, Test-Point SI, Test-point SO |
 | DC 9 | 1 | $0.00 | $0.00 | $0.00 | $0.00 | Peralta Lab | DC 9 | Peralta Lab | Peralta Lab | Peralta Lab | Peralta Lab | 0 | 2/28/2025 | | -1 | VSRC |
 | DC 5 | 1 | $0.00 | $0.00 | $0.00 | $0.00 | Peralta Lab | DC 5 | Peralta Lab | Peralta Lab | Peralta Lab | Peralta Lab | 0 | 2/28/2025 | | -1 | VSRC |
