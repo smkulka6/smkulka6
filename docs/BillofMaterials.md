@@ -18,3 +18,7 @@
 | DC 5 | 1 | $0.00 | $0.00 | $0.00 | $0.00 | Peralta Lab | DC 5 | Peralta Lab | Peralta Lab | Peralta Lab | Peralta Lab | 0 | 2/28/2025 | | -1 | VSRC |
 
 **Total Cost:** $41.38
+
+[Excel Sheet BOM ](https://docs.google.com/spreadsheets/d/156U78wOTZNQjrQSCz7AoKw_OFbUZ7FwH/edit?usp=sharing&ouid=107614409505094169035&rtpof=true&sd=true)
+
+[Excel Sheet Vendor ](https://docs.google.com/spreadsheets/d/156U78wOTZNQjrQSCz7AoKw_OFbUZ7FwH/edit?usp=sharing&ouid=107614409505094169035&rtpof=true&sd=true)
