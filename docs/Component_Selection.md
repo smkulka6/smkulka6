@@ -19,22 +19,22 @@ I selected the IFX9201SGAUMA1 motor driver because it offers robust protection f
 
 ---
 
-## 2. Voltage Regulator
+## 2. Voltage Regulator  
 
-The voltage regulator ensures that my microcontroller and other components receive a stable 3.3V power supply. Given my system’s 9V-12V input voltage, I evaluated both linear and switching regulators to determine the best balance between efficiency and simplicity.
+The voltage regulator ensures that my microcontroller and other components receive a stable 3.3V power supply. Given my system’s 9V-12V input voltage, I evaluated both linear and switching regulators to determine the best balance between efficiency and simplicity.  
 
-### Component Options
+### Component Options  
 
-| Component         | Description                              | Pros                                                                                                                                                       | Cons                                                                                   | Cost   | Link                           |
-|-------------------|------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|--------|--------------------------------|
-| LMS8117AMP-3.3    | Linear voltage regulator, 9V-12V to 3.3V | - Simple design, low noise, easy to implement<br>- Readily available and cost-effective                                                                   | - Higher heat dissipation compared to switching regulators<br>- Less efficient at higher input voltages | $1.50  | [LMS8117AMP-3.3 Datasheet](#)   |
-| MIC4680-3.3       | Switching regulator                      | - High efficiency, small size, better thermal performance<br>- Reduced power loss, ideal for battery-operated designs                                          | - Slightly complex implementation<br>- More expensive than linear regulators            | $3.50  | [MIC4680 Datasheet](#)         |
-| MP2359            | Step-down converter                      | - Compact, efficient, good power management<br>- Works well with higher input voltages                                                                     | - Requires more external components, increasing PCB complexity<br>- Design complexity compared to linear regulators | $2.50  | [MP2359 Datasheet](#)          |
+| Component       | Description                              | Pros                                                                                          | Cons                                                                 | Cost  | Link                           |  
+|---------------|------------------------------------------|----------------------------------------------------------------------------------------------|---------------------------------------------------------------------|------|--------------------------------|  
+| AP63203WU-7  | Switching regulator, 9V-12V to 3.3V      | - High efficiency (~88-90%), minimal heat dissipation  <br> - Integrated inductor simplifies PCB design  <br> - Compact, reducing board space requirements | - Requires careful layout for optimal performance  <br> - Slightly more expensive than linear regulators | $2.00 | [AP63203WU-7 Datasheet](#) |  
+| MIC4680-3.3   | Switching regulator                      | - High efficiency, small size, better thermal performance  <br> - Reduced power loss, ideal for battery-operated designs | - Slightly complex implementation  <br> - More expensive than linear regulators | $3.50 | [MIC4680 Datasheet](#) |  
+| MP2359        | Step-down converter                      | - Compact, efficient, good power management  <br> - Works well with higher input voltages   | - Requires more external components, increasing PCB complexity  <br> - Design complexity compared to linear regulators | $2.50 | [MP2359 Datasheet](#) |  
 
-**Chosen Component:** **LMS8117AMP-3.3**
+**Chosen Component:** **AP63203WU-7**  
 
 **Rationale:**  
-I chose the LMS8117AMP-3.3 regulator because it is cost-effective, easy to implement, and provides stable power with minimal noise. While it has higher heat dissipation, my design can accommodate the necessary heat sinking. Its simplicity makes it ideal for ensuring reliable operation without additional complexity.
+I selected the AP63203WU-7 because it offers high efficiency with minimal heat dissipation, making it ideal for my system’s power requirements. Its integrated inductor reduces PCB complexity, and its compact size helps optimize board space. This component provides a good balance between performance, cost, and ease of implementation.
 
 ---
 
