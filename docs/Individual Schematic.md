@@ -1,8 +1,10 @@
 # Schematic Diagram
 
 
-![Schematic Diagram](Schematic.png)
+![Schematic Diagram](SKschematic.png)
 
-You can download the PDF version of the schematic by clicking the link below:
+You can download the PDF version and Source file of the schematic by clicking the links below:
 
-[Download PDF Schematic](SchematicSK.pdf)
+[Download PDF Schematic](SKschematic.pdf)
+
+[Download Source Files ](SKschematic.zip)
