@@ -1,23 +1,20 @@
 # Bill Of Materials
 
 | Part Name/Description | Unit Quantity | Unit Prototype Cost | Total Prototype Cost | Unit Production Cost | Total Production Cost | Manufacturer | Manufacturer Part # | Vendor Link | Datasheet Link | Supplier | Supplier Part # | # Ordered | Date Submitted to Prof. | # Received | Surplus | Schematic Reference Designators |
-|-----------------------|--------------|--------------------|--------------------|------------------|------------------|--------------|------------------|-------------|--------------|---------|----------------|----------|----------------------|----------|---------|----------------------------|
-| 02981001ZXT | 1 | $0.00 | $0.00 | $0.00 | $0.00 | Littlefuse | 02981001ZXT | Digikey | Datasheet | Digikey | F3470-ND | 1 | 2/28/2025 | | -1 | F1 |
-| 609002115121 | 4 | $0.28 | $1.12 | $0.00 | $0.00 | Wurth Elektronik | 609002115121.00 | Digikey | Datasheet | Digikey | 732-13618-ND | 2 | 2/28/2025 | | -4 | J1, J2 |
-| AP63203WU-7 | 2 | $1.38 | $2.76 | $0.00 | $0.00 | Diodes Incorporated | AP63203WU-7 | Digikey | Datasheet | Digikey | AP63203WU-7DITR-ND | 2 | 2/28/2025 | | -2 | U1 |
-| ILI9341 LCD SPI TFT LCD Display Touch Panel 320x240 TFT LCD | 4 | $13.99 | $55.96 | $0.00 | $0.00 | DIANN | B0BNQD38T2 | Amazon | Datasheet | Amazon | B0BNQD38T2 | 3 | 2/28/2025 | | -4 | I1 |
-| 10uF | 2 | $0.00 | $0.00 | $0.00 | $0.00 | Peralta Lab | Peralta Lab | Peralta Lab | Peralta Lab | Peralta Lab | Peralta Lab | 0 | 2/28/2025 | | -2 | C1 |
-| 10uF 50V | 2 | $0.00 | $0.00 | $0.00 | $0.00 | Peralta Lab | Peralta Lab | Peralta Lab | Peralta Lab | Peralta Lab | Peralta Lab | 0 | 2/28/2025 | | -2 | C2 |
-| 0.1uF 25V | 2 | $0.00 | $0.00 | $0.00 | $0.00 | Peralta Lab | Peralta Lab | Peralta Lab | Peralta Lab | Peralta Lab | Peralta Lab | 0 | 2/28/2025 | | -2 | C3 |
-| 2x22uF | 1 | $0.00 | $0.00 | $0.00 | $0.00 | Peralta Lab | Peralta Lab | Peralta Lab | Peralta Lab | Peralta Lab | Peralta Lab | 0 | 2/28/2025 | | -1 | C4 |
-| LED Debug | 2 | $0.00 | $0.00 | $0.00 | $0.00 | Peralta Lab | Peralta Lab | Peralta Lab | Peralta Lab | Peralta Lab | Peralta Lab | 0 | 2/28/2025 | | -2 | D1, D3 |
-| Through Hole Barrel Jack 12V | 2 | $0.00 | $0.00 | $0.00 | $0.00 | Peralta Lab | Peralta Lab | Peralta Lab | Peralta Lab | Peralta Lab | Peralta Lab | 0 | 2/28/2025 | | -2 | J1 |
-| 3.9uH | 1 | $0.00 | $0.00 | $0.00 | $0.00 | Peralta Lab | Peralta Lab | Peralta Lab | Peralta Lab | Peralta Lab | Peralta Lab | 0 | 2/28/2025 | | -1 | L1 |
-| DOWNSTREAM | 1 | $0.00 | $0.00 | $0.00 | $0.00 | Peralta Lab | Peralta Lab | Peralta Lab | Peralta Lab | Peralta Lab | Peralta Lab | 0 | 2/28/2025 | | -1 | P1 |
-| UPSTREAM | 1 | $0.00 | $0.00 | $0.00 | $0.00 | Peralta Lab | Peralta Lab | Peralta Lab | Peralta Lab | Peralta Lab | Peralta Lab | 0 | 2/28/2025 | | -1 | P2 |
-| 10k | 2 | $0.00 | $0.00 | $0.00 | $0.00 | Peralta Lab | Peralta Lab | Peralta Lab | Peralta Lab | Peralta Lab | Peralta Lab | 0 | 2/28/2025 | | -2 | R1, R2 |
-| 220 | 2 | $0.00 | $0.00 | $0.00 | $0.00 | Peralta Lab | Peralta Lab | Peralta Lab | Peralta Lab | Peralta Lab | Peralta Lab | 0 | 2/28/2025 | | -2 | R3, R4 |
-| ESP32-S3-WROOM-1-N4 | 1 | $0.00 | $0.00 | $0.00 | $0.00 | Peralta Lab | Peralta Lab | Peralta Lab | Peralta Lab | Peralta Lab | Peralta Lab | 0 | 2/28/2025 | | -1 | U2 |
+|-----------------------|---------------|---------------------|----------------------|----------------------|-----------------------|--------------|---------------------|-------------|----------------|----------|-------------------|-----------|----------------------|------------|---------|--------------------------------|
+| Fuse 1.5A | 1 | $0.00 | $0.00 | $0.00 | $0.00 | Peralta Lab | Fuse | Peralta Lab | Peralta Lab | Peralta Lab | Peralta Lab | 0 | 2/28/2025 | | -1 | F1 |
+| Capacitor | 10 | $0.00 | $0.00 | $0.00 | $0.00 | Peralta Lab | Capacitor | Peralta Lab | Peralta Lab | Peralta Lab | Peralta Lab | 0 | 2/28/2025 | | -10 | C, C2, C4, C? |
+| 61301411021 | 3 | $0.00 | $0.00 | $0.00 | $0.00 | Peralta Lab | 61301411021 | Peralta Lab | Peralta Lab | Peralta Lab | Peralta Lab | 0 | 2/28/2025 | | -3 | Connector IN, Connector OUT, Snap Programmer |
+| Inductor | 1 | $0.00 | $0.00 | $0.00 | $0.00 | Peralta Lab | Inductor | Peralta Lab | Peralta Lab | Peralta Lab | Peralta Lab | 0 | 2/28/2025 | | -1 | L |
+| Light-Emitting Diode | 3 | $0.00 | $0.00 | $0.00 | $0.00 | Peralta Lab | LED | Peralta Lab | Peralta Lab | Peralta Lab | Peralta Lab | 0 | 2/28/2025 | | -3 | LED- PIC Debug, LED- Power Debug |
+| DC Motor | 1 | $0.00 | $0.00 | $0.00 | $0.00 | Peralta Lab | DC Motor | Peralta Lab | Peralta Lab | Peralta Lab | Peralta Lab | 0 | 2/28/2025 | | -1 | Motor Pump |
+| Resistor | 5 | $0.00 | $0.00 | $0.00 | $0.00 | Peralta Lab | Resistor | Peralta Lab | Peralta Lab | Peralta Lab | Peralta Lab | 0 | 2/28/2025 | | -5 | R1, R6, R7, R? |
+| Switch Normally Opened | 1 | $0.00 | $0.00 | $0.00 | $0.00 | Peralta Lab | Switch NO | Peralta Lab | Peralta Lab | Peralta Lab | Peralta Lab | 0 | 2/28/2025 | | -1 | S? |
+| AP63203WU-7 | 1 | $1.38 | $1.38 | $0.00 | $0.00 | Diodes Incorporated | AP63203WU-7 | Digikey | Datasheet | Digikey | AP63203WU-7DITR-ND | 1 | 2/28/2025 | | -1 | U1 |
+| IFX9201SGAUMA1 | 1 | $0.00 | $0.00 | $0.00 | $0.00 | Infineon | IFX9201SGAUMA1 | Digikey | Datasheet | Digikey | IFX9201SGAUMA1 | 0 | 2/28/2025 | | -1 | U2 |
+| PIC18F47Q10-I/PT | 1 | $0.00 | $0.00 | $0.00 | $0.00 | Microchip | PIC18F47Q10-I/PT | Digikey | Datasheet | Digikey | PIC18F47Q10-I/PT | 0 | 2/28/2025 | | -1 | U3 |
+| 61301411021 | 9 | $0.00 | $0.00 | $0.00 | $0.00 | Peralta Lab | 61301411021 | Peralta Lab | Peralta Lab | Peralta Lab | Peralta Lab | 0 | 2/28/2025 | | -9 | Test point-OUT2, Test-MCLR, Test-PGC, Test-PGD, Test-point CSN, Test-Point OUT1, Test-point SCK, Test-Point SI, Test-point SO |
+| DC 9 | 1 | $0.00 | $0.00 | $0.00 | $0.00 | Peralta Lab | DC 9 | Peralta Lab | Peralta Lab | Peralta Lab | Peralta Lab | 0 | 2/28/2025 | | -1 | VSRC |
+| DC 5 | 1 | $0.00 | $0.00 | $0.00 | $0.00 | Peralta Lab | DC 5 | Peralta Lab | Peralta Lab | Peralta Lab | Peralta Lab | 0 | 2/28/2025 | | -1 | VSRC |
 
-**Total Cost:** $59.84
-
+**Total Cost:** $1.38
