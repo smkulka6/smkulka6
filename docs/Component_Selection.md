@@ -68,7 +68,7 @@ The SEN0229 is originally designed as a generator but can function as a motor wh
 
 ## Final Microcontroller Choice & Justification
 
-The **PIC18F47Q10** is the best choice because it provides the necessary communication protocols, PWM control, and sufficient GPIOs to interface with the motor driver and other components. It ensures smooth integration with the IFX9201SGAUMA1 motor driver and the LMS8117AMP-3.3 voltage regulator. Additionally, the SEN0229 water generator turbine, when used as a motor, introduces a novel approach to actuation, and the PIC18F47Q10 offers the required control flexibility. This selection balances cost, efficiency, and ease of implementation, ensuring optimal system performance.
+The **PIC18F47Q10** is the best choice because it provides the necessary communication protocols, PWM control, and sufficient GPIOs to interface with the motor driver and other components. It ensures smooth integration with the IFX9201SGAUMA1 motor driver and the AP63203WU-7 voltage regulator. Additionally, the SEN0229 water generator turbine, when used as a motor, introduces a novel approach to actuation, and the PIC18F47Q10 offers the required control flexibility. This selection balances cost, efficiency, and ease of implementation, ensuring optimal system performance.
 
 ---
 
