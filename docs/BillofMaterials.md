@@ -1,3 +1,5 @@
+# Bill Of Materials
+
 | Part Name/Description | Unit Quantity | Unit Prototype Cost | Total Prototype Cost | Unit Production Cost | Total Production Cost | Manufacturer | Manufacturer Part # | Vendor Link | Datasheet Link | Supplier | Supplier Part # | # Ordered | Date Submitted to Prof. | # Received | Surplus | Schematic Reference Designators |
 |-----------------------|--------------|--------------------|--------------------|------------------|------------------|--------------|------------------|-------------|--------------|---------|----------------|----------|----------------------|----------|---------|----------------------------|
 | 02981001ZXT | 1 | $0.00 | $0.00 | $0.00 | $0.00 | Littlefuse | 02981001ZXT | Digikey | Datasheet | Digikey | F3470-ND | 1 | 2/28/2025 | | -1 | F1 |
