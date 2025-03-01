@@ -6,11 +6,12 @@ The motor driver is a critical component for controlling the direction and speed
 
 ### Component Options
 
-| Component      | Description                                 | Pros                                                                                                                                                                                                                  | Cons                                                                                  | Cost   | Link                         |
-|----------------|---------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------|--------|------------------------------|
-| IFX9201SGAUMA1 | Intelligent motor driver IC                 | - High efficiency, integrated protections, supports bidirectional motor control<br>- Designed for automotive and industrial applications, ensuring durability<br>- Compact design with minimal external components | - Higher cost than simpler motor drivers<br>- Requires careful PCB layout for optimal performance | $4.50  | [IFX9201 Datasheet](#)       |
-| DRV8835       | Dual H-Bridge motor driver, supports low voltage | - Compact, efficient, supports PWM<br>- Simple implementation with minimal external circuitry                                                                                                                          | - Lower current limit than other options, limiting motor selection<br>- May require external protection components | $2.50  | [DRV8835 Datasheet](#)       |
-| TB6612FNG     | Motor driver with built-in MOSFETs          | - High efficiency, good for small motors, easy to use<br>- Can drive two motors independently                                                                                                                         | - Slightly larger footprint<br>- Lower power handling capability compared to IFX9201   | $3.00  | [TB6612FNG Datasheet](#)     |
+| Component      | Description                                 | Pros                                                                                                                                                                                                                  | Cons                                                                                  | Cost   | Image | Link                         |  
+|---------------|---------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|--------|-------|------------------------------|  
+| IFX9201SGAUMA1 | Intelligent motor driver IC                 | - High efficiency, integrated protections, supports bidirectional motor control <br> - Designed for automotive and industrial applications, ensuring durability <br> - Compact design with minimal external components | - Higher cost than simpler motor drivers <br> - Requires careful PCB layout for optimal performance | $4.50  | ![IFX9201](images/ifx9201.png) | [IFX9201 Datasheet](#) |  
+| DRV8835       | Dual H-Bridge motor driver, supports low voltage | - Compact, efficient, supports PWM <br> - Simple implementation with minimal external circuitry | - Lower current limit than other options, limiting motor selection <br> - May require external protection components | $2.50  | ![DRV8835](images/drv8835.png) | [DRV8835 Datasheet](#) |  
+| TB6612FNG     | Motor driver with built-in MOSFETs          | - High efficiency, good for small motors, easy to use <br> - Can drive two motors independently | - Slightly larger footprint <br> - Lower power handling capability compared to IFX9201 | $3.00  | ![TB6612FNG](images/tb6612fng.png) | [TB6612FNG Datasheet](#) |  
+
 
 **Chosen Component:** **IFX9201SGAUMA1**
 
@@ -25,11 +26,13 @@ The voltage regulator ensures that my microcontroller and other components recei
 
 ### Component Options  
 
-| Component       | Description                              | Pros                                                                                          | Cons                                                                 | Cost  | Link                           |  
-|---------------|------------------------------------------|----------------------------------------------------------------------------------------------|---------------------------------------------------------------------|------|--------------------------------|  
-| AP63203WU-7  | Switching regulator, 9V-12V to 3.3V      | - High efficiency (~88-90%), minimal heat dissipation  <br> - Integrated inductor simplifies PCB design  <br> - Compact, reducing board space requirements | - Requires careful layout for optimal performance  <br> - Slightly more expensive than linear regulators | $2.00 | [AP63203WU-7 Datasheet](#) |  
-| MIC4680-3.3   | Switching regulator                      | - High efficiency, small size, better thermal performance  <br> - Reduced power loss, ideal for battery-operated designs | - Slightly complex implementation  <br> - More expensive than linear regulators | $3.50 | [MIC4680 Datasheet](#) |  
-| MP2359        | Step-down converter                      | - Compact, efficient, good power management  <br> - Works well with higher input voltages   | - Requires more external components, increasing PCB complexity  <br> - Design complexity compared to linear regulators | $2.50 | [MP2359 Datasheet](#) |  
+| Component       | Description                              | Pros                                                                                          | Cons                                                                 | Cost  | Image | Link                           |  
+|---------------|------------------------------------------|----------------------------------------------------------------------------------------------|---------------------------------------------------------------------|------|-------|--------------------------------|  
+| AP63203WU-7  | Switching regulator, 9V-12V to 3.3V      | - High efficiency (~88-90%), minimal heat dissipation <br> - Integrated inductor simplifies PCB design <br> - Compact, reducing board space requirements | - Requires careful layout for optimal performance <br> - Slightly more expensive than linear regulators | $2.00 | ![AP63203](images/ap63203.png) | [AP63203WU-7 Datasheet](#) |  
+| MIC4680-3.3   | Switching regulator                      | - High efficiency, small size, better thermal performance <br> - Reduced power loss, ideal for battery-operated designs | - Slightly complex implementation <br> - More expensive than linear regulators | $3.50 | ![MIC4680](images/mic4680.png) | [MIC4680 Datasheet](#) |  
+| MP2359        | Step-down converter                      | - Compact, efficient, good power management <br> - Works well with higher input voltages | - Requires more external components, increasing PCB complexity <br> - Design complexity compared to linear regulators | $2.50 | ![MP2359](images/mp2359.png) | [MP2359 Datasheet](#) |  
+
+---
 
 **Chosen Component:** **AP63203WU-7**  
 
@@ -38,7 +41,15 @@ I selected the AP63203WU-7 because it offers high efficiency with minimal heat d
 
 ---
 
-## 3. Microcontroller Selection & Pin Allocation
+## 3. Microcontroller Selection 
+
+### Component Options  
+
+| Component       | Description                            | Pros                                       | Cons                          | Cost   | Image | Link                           |  
+|---------------|----------------------------------------|-------------------------------------------|-------------------------------|------|-------|--------------------------------|  
+| **PIC18F47Q10**  | 8-bit microcontroller with multiple I/O | - Supports PWM, UART, and SPI <br> - Low power consumption | - Limited processing power compared to ARM-based MCUs | $5.00 | ![PIC18F47Q10](images/pic18f47q10.png) | [PIC18F47Q10 Datasheet](#) |  
+| **ESP32-WROOM-32** | 32-bit microcontroller with WiFi & Bluetooth | - High processing power <br> - Built-in WiFi/Bluetooth <br> - Multiple GPIOs and peripherals | - Higher power consumption <br> - Requires more complex firmware development | $6.50 | ![ESP32](images/esp32.png) | [ESP32 Datasheet](#) |  
+| **ATmega328P** | 8-bit microcontroller used in Arduino | - Low power consumption <br> - Simple firmware development <br> - Widely available | - Fewer peripherals compared to ESP32 <br> - Slower processing speed | $3.00 | ![ATmega328P](images/atmega328p.png) | [ATmega328P Datasheet](#) |  
 
 My design requires a microcontroller that supports PWM, UART, and SPI communication while offering sufficient GPIOs for motor control and sensor interfacing. After careful evaluation, I selected the **PIC18F47Q10** due to its compatibility with my motor driver and other components.
 
@@ -54,11 +65,11 @@ In my design, I am repurposing a Motor Pump to function as a bidirectional motor
 
 ### Component Options  
 
-| Component   | Description                                      | Pros                                                                                         | Cons                                                                                      | Cost   | Link                         |  
-|------------|--------------------------------------------------|----------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|--------|------------------------------|  
-| SEN0229    | Water generator turbine repurposed as a motor   | - Provides high torque for its size  <br> - Compact, water-resistant, and durable            | - Designed primarily as a generator, requiring control adjustments  <br> - Potential efficiency losses when used as a motor | $12.00 | [SEN0229 Datasheet](#)       |  
-| JGA25-371  | DC gear motor with bidirectional control        | - High torque and efficiency  <br> - Compact size with built-in gearbox                      | - Not inherently water-resistant  <br> - Requires additional sealing for wet environments | $15.00 | [JGA25-371 Datasheet](#)     |  
-| RS-385     | Small brushed DC motor                          | - Affordable and widely available  <br> - Can be used with bidirectional motor drivers       | - Lower torque output compared to geared motors  <br> - Not water-resistant               | $8.00  | [RS-385 Datasheet](#)        |  
+| Component   | Description                                      | Pros                                                                                         | Cons                                                                                      | Cost   | Image | Link                         |  
+|------------|--------------------------------------------------|----------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|--------|-------|------------------------------|  
+| SEN0229    | Water generator turbine repurposed as a motor   | - Provides high torque for its size <br> - Compact, water-resistant, and durable | - Designed primarily as a generator, requiring control adjustments <br> - Potential efficiency losses when used as a motor | $12.00 | ![SEN0229](images/sen0229.png) | [SEN0229 Datasheet](#) |  
+| JGA25-371  | DC gear motor with bidirectional control        | - High torque and efficiency <br> - Compact size with built-in gearbox | - Not inherently water-resistant <br> - Requires additional sealing for wet environments | $15.00 | ![JGA25-371](images/jga25-371.png) | [JGA25-371 Datasheet](#) |  
+| RS-385     | Small brushed DC motor                          | - Affordable and widely available <br> - Can be used with bidirectional motor drivers | - Lower torque output compared to geared motors <br> - Not water-resistant | $8.00  | ![RS-385](images/rs-385.png) | [RS-385 Datasheet](#) |  
 
 
 **Rationale:**  
@@ -88,7 +99,7 @@ These additional components play a vital role in ensuring the stability and reli
 
 ## MPLAB Test
 
-![MPLAB](docs/subfolder/MP_Lab Screenshot.png)
+![MPLAB](MP_Lab Screenshot.png)
 
 ---
 
