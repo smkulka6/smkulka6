@@ -58,10 +58,3 @@ The motor driver subsystem must:
 - Include required prefix and suffix.
 - Ensure messages comply with team specifications.
 
-## Demonstration and Submission
-- The system will be tested by connecting to an instructor’s evaluation board.
-- Demonstration of message reception and processing is required.
-- The API page must be published on GitHub with a downloadable ZIP of the code.
-- Submission requires both a working URL and a PDF export of the API page.
-
-This document ensures compliance with the team’s protocol and facilitates seamless communication within the system.
