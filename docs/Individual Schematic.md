@@ -6,13 +6,13 @@ This document offers a complete and expanded technical explanation of the hardwa
 
 ---
 
-## 📷 Final Schematic (As Fabricated)
+## 📷 Final Schematic
 ![Schematic Image](./Schematic.png)
 
 ---
 
-## 🛠️ Final PCB (As Fabricated)
-Please attach clear front and back images of the manufactured PCB here once assembled.
+## 🛠️ Final PCB 
+
 
 ![PCB_Front](/mnt/data/a93885e3-9447-4aa5-94d4-1aae94810fff.png)
 
