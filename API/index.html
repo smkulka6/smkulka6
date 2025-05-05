@@ -505,8 +505,22 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#messages-sent" class="md-nav__link">
-    Messages Sent
+  <a href="#messages-sent-status-update-to-k-and-t" class="md-nav__link">
+    Messages Sent (Status Update to K and T)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#message-summary-table-as-shown-on-hmi-and-mqtt-dashboards" class="md-nav__link">
+    Message Summary Table (as shown on HMI and MQTT dashboards)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#message-commands-received-by-motor-driver" class="md-nav__link">
+    Message Commands Received by Motor Driver
   </a>
   
 </li>
@@ -903,8 +917,22 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#messages-sent" class="md-nav__link">
-    Messages Sent
+  <a href="#messages-sent-status-update-to-k-and-t" class="md-nav__link">
+    Messages Sent (Status Update to K and T)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#message-summary-table-as-shown-on-hmi-and-mqtt-dashboards" class="md-nav__link">
+    Message Summary Table (as shown on HMI and MQTT dashboards)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#message-commands-received-by-motor-driver" class="md-nav__link">
+    Message Commands Received by Motor Driver
   </a>
   
 </li>
@@ -1113,33 +1141,237 @@
 <table>
 <thead>
 <tr>
+<th>Byte</th>
+<th>Name</th>
 <th>Type</th>
-<th>Description</th>
-<th>Action</th>
+<th>Allowed Values</th>
+<th>Purpose</th>
+<th>Function Called</th>
 </tr>
 </thead>
 <tbody>
 <tr>
+<td>1</td>
+<td>Header 1</td>
+<td>char</td>
+<td><code>'F'</code></td>
+<td>Start of frame</td>
+<td>—</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Header 2</td>
+<td>char</td>
+<td><code>'S'</code></td>
+<td>Start of frame</td>
+<td>—</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Sender ID</td>
+<td>char</td>
+<td><code>'T'</code>, etc.</td>
+<td>Source subsystem</td>
+<td>Used for validation</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Receiver ID</td>
+<td>char</td>
+<td><code>'S'</code></td>
+<td>Target = Motor subsystem</td>
+<td>Used for matching</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Type</td>
+<td>char</td>
 <td><code>'0'</code></td>
-<td>Motor Control Command</td>
-<td>Executes the corresponding SPI motor command if the receiver ID is <code>'S'</code></td>
+<td>Motor control command</td>
+<td>Used for message logic</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Data</td>
+<td>char</td>
+<td><code>'1'</code>, <code>'2'</code>, <code>'3'</code></td>
+<td><code>'1'</code> = Off, <code>'2'</code> = FWD, <code>'3'</code> = REV</td>
+<td><code>motor_off()</code> / <code>motor_forward()</code> / <code>motor_reverse()</code></td>
+</tr>
+<tr>
+<td>7</td>
+<td>Footer 1</td>
+<td>char</td>
+<td><code>'F'</code></td>
+<td>End of frame</td>
+<td>—</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Footer 2</td>
+<td>char</td>
+<td><code>'S'</code></td>
+<td>End of frame</td>
+<td>—</td>
 </tr>
 </tbody>
 </table>
-<h3 id="messages-sent">Messages Sent</h3>
+<h3 id="messages-sent-status-update-to-k-and-t">Messages Sent (Status Update to K and T)</h3>
 <table>
 <thead>
 <tr>
+<th>Byte</th>
+<th>Name</th>
 <th>Type</th>
-<th>Description</th>
-<th>Action</th>
+<th>Example Value</th>
+<th>Purpose</th>
+<th>Function Source</th>
 </tr>
 </thead>
 <tbody>
 <tr>
+<td>1</td>
+<td>Header 1</td>
+<td>char</td>
+<td><code>'F'</code></td>
+<td>Start of frame</td>
+<td><code>send_status_to()</code></td>
+</tr>
+<tr>
+<td>2</td>
+<td>Header 2</td>
+<td>char</td>
+<td><code>'S'</code></td>
+<td>Start of frame</td>
+<td><code>send_status_to()</code></td>
+</tr>
+<tr>
+<td>3</td>
+<td>Sender ID</td>
+<td>char</td>
+<td><code>'S'</code></td>
+<td>This motor subsystem</td>
+<td>hardcoded</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Receiver ID</td>
+<td>char</td>
+<td><code>'K'</code> or <code>'T'</code></td>
+<td>Receiver: HMI or MQTT</td>
+<td>called twice</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Type</td>
+<td>char</td>
 <td><code>'0'</code></td>
-<td>Motor Status Update</td>
-<td>Broadcasts the motor's current state to <code>'K'</code> (HMI) and <code>'T'</code> (MQTT) after executing a command</td>
+<td>Status update type</td>
+<td>always <code>'0'</code></td>
+</tr>
+<tr>
+<td>6</td>
+<td>Data</td>
+<td>char</td>
+<td><code>'1'</code>, <code>'2'</code>, <code>'3'</code></td>
+<td><code>'1'</code> = Off, <code>'2'</code> = FWD, <code>'3'</code> = REV</td>
+<td>based on last command</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Footer 1</td>
+<td>char</td>
+<td><code>'F'</code></td>
+<td>End of frame</td>
+<td><code>send_status_to()</code></td>
+</tr>
+<tr>
+<td>8</td>
+<td>Footer 2</td>
+<td>char</td>
+<td><code>'S'</code></td>
+<td>End of frame</td>
+<td><code>send_status_to()</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="message-summary-table-as-shown-on-hmi-and-mqtt-dashboards">Message Summary Table (as shown on HMI and MQTT dashboards)</h3>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Message ID</th>
+<th>Recipient</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Motor OFF</td>
+<td>FSST01FS</td>
+<td>Sanjit</td>
+<td>Motor off status update</td>
+</tr>
+<tr>
+<td></td>
+<td>FSSK01FS</td>
+<td>Kevin</td>
+<td>Motor off status update</td>
+</tr>
+<tr>
+<td>Motor Reverse Status</td>
+<td>FSST02FS</td>
+<td>Sanjit</td>
+<td>Motor is reversing</td>
+</tr>
+<tr>
+<td></td>
+<td>FSSK02FS</td>
+<td>Kevin</td>
+<td>Motor is reversing</td>
+</tr>
+<tr>
+<td>Motor Forward Status</td>
+<td>FSST03FS</td>
+<td>Sanjit</td>
+<td>Motor is running forward</td>
+</tr>
+<tr>
+<td></td>
+<td>FSSK03FS</td>
+<td>Kevin</td>
+<td>Motor is running forward</td>
+</tr>
+</tbody>
+</table>
+<h3 id="message-commands-received-by-motor-driver">Message Commands Received by Motor Driver</h3>
+<table>
+<thead>
+<tr>
+<th>Command Description</th>
+<th>Message ID</th>
+<th>Sender</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Motor OFF Command</td>
+<td>FSTS01FS</td>
+<td>Sanjit</td>
+<td>Stop the motor</td>
+</tr>
+<tr>
+<td>Forward Command</td>
+<td>FSTS02FS</td>
+<td>Sanjit</td>
+<td>Run motor forward</td>
+</tr>
+<tr>
+<td>Reverse Command</td>
+<td>FSTS03FS</td>
+<td>Sanjit</td>
+<td>Run motor in reverse</td>
 </tr>
 </tbody>
 </table>
