@@ -33,7 +33,7 @@ Includes:
 - PCB and Schematic files
 - DRS Report
 
-➡️ [Download Gerber Files (ZIP)](./Project_SK.zip)
+➡️ [Download Project Output  (ZIP)](./Project_SK.zip)
 
 ## Notes
 - No 3D printed components were used.
