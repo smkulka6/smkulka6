@@ -9,7 +9,7 @@ Includes:
 - SPI motor control (Forward, Reverse, OFF)
 - Status broadcasting to HMI and Web
 
-➡️ [Download MPLAB X Code Project (ZIP)](./Final_MPLABX_Code.zip)
+➡️ [Download MPLAB X Code Project (ZIP)](./Motor_classics.zip)
 
 ## Altium Hardware Design Files (Schematic + PCB)
 Includes:
@@ -17,14 +17,23 @@ Includes:
 - PCB layout (.PcbDoc)
 - Altium project files (.PrjPcb)
 
-➡️ [Download Altium PCB Design Files (ZIP)](./Final_Altium_PCB.zip)
+➡️ [Download Altium PCB Design Files (ZIP)](./Motor_Subsystem.zip)
 
 ## Gerber Files for PCB Fabrication
 Includes:
 - Top and bottom copper layers
 - Silkscreen, solder mask, drill files
 
-➡️ [Download Gerber Files (ZIP)](./Motor_Subsystem_Gerbers.zip)
+➡️ [Download Gerber Files (ZIP)](./SK_Gerber.zip)
+
+## Altium Project Output files
+Includes:
+- Top and bottom copper layers
+- Silkscreen, solder mask, drill files
+- PCB and Schematic files
+- DRS Report
+
+➡️ [Download Gerber Files (ZIP)](./Project_SK.zip)
 
 ## Notes
 - No 3D printed components were used.
