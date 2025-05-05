@@ -7,7 +7,7 @@ This document offers a complete and expanded technical explanation of the hardwa
 ---
 
 ## 📷 Final Schematic (As Fabricated)
-![Schematic Image](/Schematic.png)
+![Schematic Image](./Schematic.png)
 
 ---
 
