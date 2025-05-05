@@ -14,14 +14,45 @@ The motor driver subsystem is part of a chain of UART-connected devices, each li
 ## Message Types
 
 ### Messages Received
-| Type | Description | Action |
-|------|-------------|--------|
-| `'0'` | Motor Control Command | Executes the corresponding SPI motor command if the receiver ID is `'S'` |
+| Byte | Name        | Type    | Allowed Values | Purpose                      | Function Called        |
+|------|-------------|---------|----------------|------------------------------|------------------------|
+| 1    | Header 1    | char    | `'F'`          | Start of frame               | —                      |
+| 2    | Header 2    | char    | `'S'`          | Start of frame               | —                      |
+| 3    | Sender ID   | char    | `'T'`, etc.    | Source subsystem             | Used for validation    |
+| 4    | Receiver ID | char    | `'S'`          | Target = Motor subsystem     | Used for matching      |
+| 5    | Type        | char    | `'0'`          | Motor control command        | Used for message logic |
+| 6    | Data        | char    | `'1'`, `'2'`, `'3'` | `'1'` = Off, `'2'` = FWD, `'3'` = REV | `motor_off()` / `motor_forward()` / `motor_reverse()` |
+| 7    | Footer 1    | char    | `'F'`          | End of frame                 | —                      |
+| 8    | Footer 2    | char    | `'S'`          | End of frame                 | —                      |
 
-### Messages Sent
-| Type | Description | Action |
-|------|-------------|--------|
-| `'0'` | Motor Status Update | Broadcasts the motor's current state to `'K'` (HMI) and `'T'` (MQTT) after executing a command |
+### Messages Sent (Status Update to K and T)
+| Byte | Name        | Type    | Example Value | Purpose                        | Function Source         |
+|------|-------------|---------|----------------|--------------------------------|--------------------------|
+| 1    | Header 1    | char    | `'F'`          | Start of frame                 | `send_status_to()`      |
+| 2    | Header 2    | char    | `'S'`          | Start of frame                 | `send_status_to()`      |
+| 3    | Sender ID   | char    | `'S'`          | This motor subsystem           | hardcoded               |
+| 4    | Receiver ID | char    | `'K'` or `'T'` | Receiver: HMI or MQTT          | called twice            |
+| 5    | Type        | char    | `'0'`          | Status update type             | always `'0'`            |
+| 6    | Data        | char    | `'1'`, `'2'`, `'3'` | `'1'` = Off, `'2'` = FWD, `'3'` = REV | based on last command   |
+| 7    | Footer 1    | char    | `'F'`          | End of frame                   | `send_status_to()`      |
+| 8    | Footer 2    | char    | `'S'`          | End of frame                   | `send_status_to()`      |
+
+### Message Summary Table (as shown on HMI and MQTT dashboards)
+| Action               | Message ID   | Recipient | Description                 |
+|----------------------|--------------|-----------|-----------------------------|
+| Motor OFF            | FSST01FS     | Sanjit    | Motor off status update     |
+|                      | FSSK01FS     | Kevin     | Motor off status update     |
+| Motor Reverse Status | FSST02FS     | Sanjit    | Motor is reversing          |
+|                      | FSSK02FS     | Kevin     | Motor is reversing          |
+| Motor Forward Status | FSST03FS     | Sanjit    | Motor is running forward    |
+|                      | FSSK03FS     | Kevin     | Motor is running forward    |
+
+### Message Commands Received by Motor Driver
+| Command Description | Message ID   | Sender  | Meaning               |
+|---------------------|--------------|---------|------------------------|
+| Motor OFF Command   | FSTS01FS     | Sanjit  | Stop the motor         |
+| Forward Command     | FSTS02FS     | Sanjit  | Run motor forward      |
+| Reverse Command     | FSTS03FS     | Sanjit  | Run motor in reverse   |
 
 ---
 
