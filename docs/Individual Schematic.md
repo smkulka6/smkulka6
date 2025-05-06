@@ -14,9 +14,9 @@ This document offers a complete and expanded technical explanation of the hardwa
 ## 🛠️ Final PCB 
 
 
-![PCB_Front](/mnt/data/a93885e3-9447-4aa5-94d4-1aae94810fff.png)
+![PCB_Front](./PCB_Front.png)
 
-![PCB_Back](/mnt/data/a93885e3-9447-4aa5-94d4-1aae94810fff.png)
+![PCB_Back](./back.png)
 
 
 ---
