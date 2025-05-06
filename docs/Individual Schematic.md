@@ -16,7 +16,7 @@ This document offers a complete and expanded technical explanation of the hardwa
 
 ![PCB_Front](./PCB_Front.png)
 
-![PCB_Back](./back.png)
+![PCB_Back](./back.jpg)
 
 
 ---
