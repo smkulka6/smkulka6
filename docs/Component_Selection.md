@@ -99,7 +99,7 @@ These additional components play a vital role in ensuring the stability and reli
 
 ## MPLAB Test
 
-![MP_Lab](MP_LabScreenshot.png)
+![MP_Lab](MPlab.png)
 
 ---
 
