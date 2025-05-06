@@ -1,5 +1,5 @@
 
-# Motor Driver Subsystem – Final Hardware Design Documentation (Extended)
+# Motor Driver Subsystem – Schematic
 
 ## 🧩 Overview
 This document offers a complete and expanded technical explanation of the hardware design for the Motor Driver Subsystem. The design is intended for use in a multi-subsystem embedded system project that coordinates sensor readings, real-time control, and remote monitoring via MQTT. This motor subsystem receives commands over UART, processes them on a PIC18F47Q10 microcontroller, and sends SPI-based control signals to an IFX9201SGAUMA1 motor driver IC.
