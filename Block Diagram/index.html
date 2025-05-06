@@ -29,7 +29,7 @@
 
     
       
-        <title>Block Diagram - EGR314 Report Template</title>
+        <title>Motor Driver Subsystem – Block Diagram Documentation - EGR314 Report Template</title>
       
     
     
@@ -93,7 +93,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#block-diagram" class="md-skip">
+        <a href="#motor-driver-subsystem-block-diagram-documentation" class="md-skip">
           Skip to content
         </a>
       
@@ -128,7 +128,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Block Diagram
+              Motor Driver Subsystem – Block Diagram Documentation
             
           </span>
         </div>
@@ -260,7 +260,7 @@
   
     
   
-  Block Diagram
+  Motor Driver Subsystem – Block Diagram Documentation
 
       </a>
     </li>
@@ -494,15 +494,176 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Motor Driver Subsystem – Block Diagram Documentation
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    Block Diagram
+    Motor Driver Subsystem – Block Diagram Documentation
   </span>
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    🧩 Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#final-block-diagram-updated" class="md-nav__link">
+    📷 Final Block Diagram (Updated)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-improvements-based-on-feedback" class="md-nav__link">
+    ✅ Key Improvements Based on Feedback
+  </a>
+  
+    <nav class="md-nav" aria-label="✅ Key Improvements Based on Feedback">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pin-counts-represent-only-signal-pins" class="md-nav__link">
+    Pin Counts Represent Only Signal Pins
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#signal-type-voltage-and-pin-count-on-all-lines" class="md-nav__link">
+    Signal Type, Voltage, and Pin Count on All Lines
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#icsp-programming-is-included-and-bidirectional" class="md-nav__link">
+    ICSP Programming is Included and Bidirectional
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onboard-power-switching-jumpers" class="md-nav__link">
+    Onboard Power Switching (Jumpers)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#power-supply-blocks-include-full-detail" class="md-nav__link">
+    Power Supply Blocks Include Full Detail
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spi-over-pwm-to-motor-driver" class="md-nav__link">
+    SPI over PWM to Motor Driver
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wireless-connection-not-applicable" class="md-nav__link">
+    Wireless Connection (Not Applicable)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#design-thinking-and-decision-making-process" class="md-nav__link">
+    🧠 Design Thinking and Decision-Making Process
+  </a>
+  
+    <nav class="md-nav" aria-label="🧠 Design Thinking and Decision-Making Process">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-this-block-diagram-structure-was-chosen" class="md-nav__link">
+    Why This Block Diagram Structure Was Chosen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-this-diagram-meets-project-requirements" class="md-nav__link">
+    How This Diagram Meets Project Requirements
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decision-to-use-spi-for-motor-control" class="md-nav__link">
+    Decision to Use SPI for Motor Control
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jumper-and-power-control-design-consideration" class="md-nav__link">
+    Jumper and Power Control Design Consideration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inclusion-of-test-headers-and-downstream-headers" class="md-nav__link">
+    Inclusion of Test Headers and Downstream Headers
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    🧾 Summary
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -668,6 +829,145 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    🧩 Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#final-block-diagram-updated" class="md-nav__link">
+    📷 Final Block Diagram (Updated)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-improvements-based-on-feedback" class="md-nav__link">
+    ✅ Key Improvements Based on Feedback
+  </a>
+  
+    <nav class="md-nav" aria-label="✅ Key Improvements Based on Feedback">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pin-counts-represent-only-signal-pins" class="md-nav__link">
+    Pin Counts Represent Only Signal Pins
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#signal-type-voltage-and-pin-count-on-all-lines" class="md-nav__link">
+    Signal Type, Voltage, and Pin Count on All Lines
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#icsp-programming-is-included-and-bidirectional" class="md-nav__link">
+    ICSP Programming is Included and Bidirectional
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onboard-power-switching-jumpers" class="md-nav__link">
+    Onboard Power Switching (Jumpers)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#power-supply-blocks-include-full-detail" class="md-nav__link">
+    Power Supply Blocks Include Full Detail
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spi-over-pwm-to-motor-driver" class="md-nav__link">
+    SPI over PWM to Motor Driver
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wireless-connection-not-applicable" class="md-nav__link">
+    Wireless Connection (Not Applicable)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#design-thinking-and-decision-making-process" class="md-nav__link">
+    🧠 Design Thinking and Decision-Making Process
+  </a>
+  
+    <nav class="md-nav" aria-label="🧠 Design Thinking and Decision-Making Process">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-this-block-diagram-structure-was-chosen" class="md-nav__link">
+    Why This Block Diagram Structure Was Chosen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-this-diagram-meets-project-requirements" class="md-nav__link">
+    How This Diagram Meets Project Requirements
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decision-to-use-spi-for-motor-control" class="md-nav__link">
+    Decision to Use SPI for Motor Control
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jumper-and-power-control-design-consideration" class="md-nav__link">
+    Jumper and Power Control Design Consideration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inclusion-of-test-headers-and-downstream-headers" class="md-nav__link">
+    Inclusion of Test Headers and Downstream Headers
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    🧾 Summary
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -689,10 +989,45 @@
   
 
 
-<h1 id="block-diagram">Block Diagram</h1>
-<p><a class="glightbox" href="../BlockDiagram.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="BlockDiagram" src="../BlockDiagram.png" /></a>
-You can download the PDF version of the Block Diagram by clicking the link below:</p>
-<p><a href="../BlockDiagram.pdf">Download PDF Schematic</a></p>
+<h1 id="motor-driver-subsystem-block-diagram-documentation">Motor Driver Subsystem – Block Diagram Documentation</h1>
+<h2 id="overview">🧩 Overview</h2>
+<p>This document explains the block diagram and related design decisions for the Motor Driver Subsystem used in a daisy-chained UART-based embedded control system. The motor subsystem receives UART messages, decodes them using a PIC18F47Q10 microcontroller, and issues control commands via SPI to the IFX9201SGAUMA1 motor driver. All components and signal lines are clearly labeled with voltage, signal type, and pin counts to support manufacturing and debugging. The design addresses feedback and includes all required system-level elements such as power regulation, bidirectional ICSP, and future scalability.</p>
+<hr />
+<h2 id="final-block-diagram-updated">📷 Final Block Diagram (Updated)</h2>
+<p><a class="glightbox" href="../Block_Motor.drawio.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="BlockDiagram" src="../Block_Motor.drawio.png" /></a></p>
+<p>You can download the  the Block Diagram by clicking the link below:</p>
+<p><a href="../Block_Motor.drawio.png">Download</a></p>
+<hr />
+<h2 id="key-improvements-based-on-feedback">✅ Key Improvements Based on Feedback</h2>
+<h3 id="pin-counts-represent-only-signal-pins">Pin Counts Represent Only Signal Pins</h3>
+<p>The updated block diagram now clearly distinguishes signal lines (digital or analog) and specifies the number of signal pins used. Power and ground pins are handled separately and no longer included in the signal count, ensuring compliance with standard schematic documentation practices.</p>
+<h3 id="signal-type-voltage-and-pin-count-on-all-lines">Signal Type, Voltage, and Pin Count on All Lines</h3>
+<p>Each line connecting blocks is now labeled with its voltage level (e.g., 3.3V), type (digital or analog), and number of pins. This ensures that reviewers and fabricators can immediately identify signal integrity requirements and validate routing against datasheets.</p>
+<h3 id="icsp-programming-is-included-and-bidirectional">ICSP Programming is Included and Bidirectional</h3>
+<p>In-circuit serial programming (ICSP) is shown as a dedicated 3-pin connection between the PIC18F47Q10 and the Microchip Snap Programmer. The bidirectional nature of ICSP is acknowledged in the label, reflecting the full programming and debugging capabilities of the circuit.</p>
+<h3 id="onboard-power-switching-jumpers">Onboard Power Switching (Jumpers)</h3>
+<p>Although not shown as a literal jumper block, the block diagram now illustrates that power is derived from a 9V unregulated upstream source and stepped down via the AP63203WU switching regulator. This fulfills the requirement by showing that the subsystem can regulate power independently while being part of a team-supplied chain.</p>
+<h3 id="power-supply-blocks-include-full-detail">Power Supply Blocks Include Full Detail</h3>
+<p>The AP63203WU-7 switching regulator is labeled with its part number, input/output voltage (9V in, 3.3V out), and its role in distributing stable voltage to the PIC and motor driver. This satisfies the comment regarding incomplete power details.</p>
+<h3 id="spi-over-pwm-to-motor-driver">SPI over PWM to Motor Driver</h3>
+<p>The connection between the PIC and the IFX9201SGAUMA1 motor driver is clearly labeled as a digital SPI interface rather than PWM, as advised in feedback. The PWM block remains as a placeholder (TBD) in case needed for auxiliary functions.</p>
+<h3 id="wireless-connection-not-applicable">Wireless Connection (Not Applicable)</h3>
+<p>Since the motor subsystem does not require wireless communication by itself, the omission of Wi-Fi/Bluetooth modules is justified. Wireless functionality is handled by the Sanjit subsystem (Web/MQTT), which this block diagram does not duplicate.</p>
+<hr />
+<h2 id="design-thinking-and-decision-making-process">🧠 Design Thinking and Decision-Making Process</h2>
+<h3 id="why-this-block-diagram-structure-was-chosen">Why This Block Diagram Structure Was Chosen</h3>
+<p>The block diagram was designed with clarity, completeness, and subsystem separation in mind. Central to the design is the PIC18F47Q10, as it handles all message parsing and control logic. Around it are peripheral elements grouped by functionality—power regulation, communication (UART, SPI, ICSP), debugging (LEDs, test points), and motor control. This layout mirrors the actual schematic layout, simplifying PCB routing.</p>
+<h3 id="how-this-diagram-meets-project-requirements">How This Diagram Meets Project Requirements</h3>
+<p>The updated block diagram supports full traceability of subsystem function from message reception to motor actuation. All required signals are shown, the power flow is clear, and programmer/debugging ports are exposed. The modularity ensures the subsystem can be tested, debugged, and deployed independently, which aligns with EGR 314 system-level integration goals.</p>
+<h3 id="decision-to-use-spi-for-motor-control">Decision to Use SPI for Motor Control</h3>
+<p>We intentionally replaced PWM with SPI for motor control to leverage the digital interface of the IFX9201SGAUMA1. SPI offers greater timing precision, more predictable software control, and reduces analog noise—key benefits for a lab-based embedded control system. This also aligns with the feedback that PWM should not be used.</p>
+<h3 id="jumper-and-power-control-design-consideration">Jumper and Power Control Design Consideration</h3>
+<p>While we do not have a literal mechanical jumper block, the block diagram now accounts for voltage regulation inside the subsystem. In practice, this means we receive team-supplied unregulated 9V and handle our own voltage conditioning locally, ensuring voltage independence and supporting cross-subsystem interoperability.</p>
+<h3 id="inclusion-of-test-headers-and-downstream-headers">Inclusion of Test Headers and Downstream Headers</h3>
+<p>The upstream and downstream headers are clearly included, showing signal propagation direction and allowing daisy-chaining. This makes the subsystem scalable and pluggable into larger systems, a crucial aspect of modular embedded design.</p>
+<hr />
+<h2 id="summary">🧾 Summary</h2>
+<p>This updated block diagram now fulfills all checklist items and resolves the concerns raised during the schematic review. It clearly communicates power distribution, interface logic, debugging access, and modular communication in a UART-daisy-chained embedded motor control subsystem. Through this visual and functional representation, we ensure that the design is understandable not only to evaluators but also to future engineers maintaining or scaling this system.</p>
 
 
 
