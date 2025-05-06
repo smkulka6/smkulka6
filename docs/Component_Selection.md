@@ -1,5 +1,36 @@
 # Major Component Selection & Comparison
 
+## 🔧 Summary Table of Final Major Components
+
+| Component Type       | Selected Part         | Key Features | Reason for Selection |
+|----------------------|------------------------|--------------|----------------------|
+| **Microcontroller**  | PIC18F47Q10            | UART, SPI, GPIO, low power, MCC support | Supports all required protocols for UART and SPI; flexible GPIO handling; simple setup in MPLAB X |
+| **Motor Driver**     | IFX9201SGAUMA1         | SPI-controlled, H-bridge, bidirectional, protection features | Compact and robust; allows digital motor control without analog tuning; high efficiency |
+| **Voltage Regulator**| AP63203WU-7            | Buck converter, 3.3V output from 9–12V input, high efficiency | Ideal for stepping down unregulated input to MCU/motor voltage with minimal heat |
+| **Motor**            | SEN0229 (repurposed)   | High torque, water-resistant, compact | Innovative reuse of turbine as a motor; supports bidirectional actuation |
+| **Communication**    | UART + SPI (via PIC)   | Reliable, fast digital comm protocols | Chosen for structured daisy-chain message flow and precise SPI-based motor control |
+
+---
+
+## 🧠 Decision-Making Process
+
+Creating this section involved identifying and justifying each core component used in the motor driver subsystem design. The project required precise motor control, robust communication, and reliable power regulation within a daisy-chained embedded system. Each component was selected after evaluating multiple alternatives for compatibility, efficiency, cost, ease of integration, and support for lab testing conditions.
+
+1. **Microcontroller (PIC18F47Q10)**  
+   We prioritized UART and SPI peripheral availability, low power consumption, and easy setup. MCC compatibility made it simple to assign and configure pins. Other microcontrollers (ATmega328P, ESP32) were reviewed but either lacked SPI precision or added complexity.
+
+2. **Motor Driver (IFX9201SGAUMA1)**  
+   Chosen for its digital SPI control, eliminating the need for PWM tuning. It’s compact, reliable, and includes built-in protections. Competing ICs like DRV8835 were lower cost but lacked protection and current drive capability.
+
+3. **Regulator (AP63203WU-7)**  
+   Buck converters were favored over LDOs to minimize heat and improve power efficiency. This regulator integrates the inductor, reducing layout complexity and component count—important for tight PCB constraints.
+
+4. **Motor (SEN0229)**  
+   Originally a generator, this water-resistant turbine motor fits the dual need for robustness and compact size. Reusing it creatively as a motor allowed us to simplify mechanical integration without new hardware sourcing.
+
+This table and explanation make it clear that all components were selected to meet specific system constraints: reliable actuation, message-based control, safe power delivery, and subsystem modularity.
+
+
 ## 1. Motor Driver
 
 The motor driver is a critical component for controlling the direction and speed of the motor. Since my design requires bidirectional control of a motor, I needed a motor driver with high efficiency, integrated protection features, and compatibility with my microcontroller. I considered multiple options before finalizing my choice, ensuring that the selected component met my design criteria.
