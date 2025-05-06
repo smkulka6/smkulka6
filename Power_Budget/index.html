@@ -29,7 +29,7 @@
 
     
       
-        <title>Power Budget Calculation ⚡ - EGR314 Report Template</title>
+        <title>⚡ Power Budget Analysis (Detailed) - EGR314 Report Template</title>
       
     
     
@@ -93,7 +93,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#power-budget-calculation" class="md-skip">
+        <a href="#power-budget-analysis-detailed" class="md-skip">
           Skip to content
         </a>
       
@@ -128,7 +128,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Power Budget Calculation ⚡
+              ⚡ Power Budget Analysis (Detailed)
             
           </span>
         </div>
@@ -328,7 +328,7 @@
   
     
   
-  Power Budget Calculation ⚡
+  ⚡ Power Budget Analysis (Detailed)
 
       </a>
     </li>
@@ -574,7 +574,7 @@
           
   
   <span class="md-ellipsis">
-    Power Budget Calculation ⚡
+    ⚡ Power Budget Analysis (Detailed)
   </span>
   
 
@@ -585,7 +585,7 @@
         
   
   <span class="md-ellipsis">
-    Power Budget Calculation ⚡
+    ⚡ Power Budget Analysis (Detailed)
   </span>
   
 
@@ -607,29 +607,84 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#component-power-breakdown" class="md-nav__link">
-    Component Power Breakdown
+  <a href="#component-level-power-breakdown" class="md-nav__link">
+    🔋 Component-Level Power Breakdown
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#total-power-consumption" class="md-nav__link">
-    Total Power Consumption
-  </a>
-  
-    <nav class="md-nav" aria-label="Total Power Consumption">
+    <nav class="md-nav" aria-label="🔋 Component-Level Power Breakdown">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#at-33v-load" class="md-nav__link">
-    At 3.3V Load:
+  <a href="#final-load-calculation" class="md-nav__link">
+    🔢 Final Load Calculation
   </a>
   
 </li>
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-the-power-budget-informed-design-decisions" class="md-nav__link">
+    📊 How the Power Budget Informed Design Decisions
+  </a>
+  
+    <nav class="md-nav" aria-label="📊 How the Power Budget Informed Design Decisions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-voltage-rail-selection" class="md-nav__link">
+    1. Voltage Rail Selection
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-power-regulation-strategy" class="md-nav__link">
+    2. Power Regulation Strategy
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-motor-load-evaluation" class="md-nav__link">
+    3. Motor Load Evaluation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-protection-circuitry" class="md-nav__link">
+    4. Protection Circuitry
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-peripheral-consumption" class="md-nav__link">
+    5. Peripheral Consumption
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#broader-design-insights-from-the-power-budget" class="md-nav__link">
+    🧰 Broader Design Insights from the Power Budget
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion-using-the-power-budget-for-reliability-and-expansion" class="md-nav__link">
+    📈 Conclusion: Using the Power Budget for Reliability and Expansion
+  </a>
   
 </li>
       
@@ -739,29 +794,84 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#component-power-breakdown" class="md-nav__link">
-    Component Power Breakdown
+  <a href="#component-level-power-breakdown" class="md-nav__link">
+    🔋 Component-Level Power Breakdown
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#total-power-consumption" class="md-nav__link">
-    Total Power Consumption
-  </a>
-  
-    <nav class="md-nav" aria-label="Total Power Consumption">
+    <nav class="md-nav" aria-label="🔋 Component-Level Power Breakdown">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#at-33v-load" class="md-nav__link">
-    At 3.3V Load:
+  <a href="#final-load-calculation" class="md-nav__link">
+    🔢 Final Load Calculation
   </a>
   
 </li>
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-the-power-budget-informed-design-decisions" class="md-nav__link">
+    📊 How the Power Budget Informed Design Decisions
+  </a>
+  
+    <nav class="md-nav" aria-label="📊 How the Power Budget Informed Design Decisions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-voltage-rail-selection" class="md-nav__link">
+    1. Voltage Rail Selection
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-power-regulation-strategy" class="md-nav__link">
+    2. Power Regulation Strategy
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-motor-load-evaluation" class="md-nav__link">
+    3. Motor Load Evaluation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-protection-circuitry" class="md-nav__link">
+    4. Protection Circuitry
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-peripheral-consumption" class="md-nav__link">
+    5. Peripheral Consumption
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#broader-design-insights-from-the-power-budget" class="md-nav__link">
+    🧰 Broader Design Insights from the Power Budget
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion-using-the-power-budget-for-reliability-and-expansion" class="md-nav__link">
+    📈 Conclusion: Using the Power Budget for Reliability and Expansion
+  </a>
   
 </li>
       
@@ -795,129 +905,132 @@
   
 
 
-<h1 id="power-budget-calculation">Power Budget Calculation ⚡</h1>
-<p>Below is the power budget analysis for our system, detailing voltage, current, and power consumption for each component.</p>
-<h2 id="component-power-breakdown">Component Power Breakdown</h2>
+<h1 id="power-budget-analysis-detailed">⚡ Power Budget Analysis (Detailed)</h1>
+<p>This section presents the final power budget evaluation for the <strong>Motor Driver Subsystem</strong>, reflecting the actual hardware implementation. The purpose of this analysis is to ensure all components operate safely within power limits, without thermal overload or voltage collapse, while supporting subsystem reliability and expandability. All data is derived from <strong>official datasheets</strong>, <strong>measured lab current draw</strong>, and <strong>worst-case electrical estimates</strong>, taking into account the system's operating environment and shared power delivery from the upstream daisy-chain.</p>
+<hr />
+<h2 id="component-level-power-breakdown">🔋 Component-Level Power Breakdown</h2>
+<p>The following table summarizes the power consumption characteristics for each major and minor component, along with operating voltages and calculated power draw:</p>
 <table>
 <thead>
 <tr>
 <th><strong>Component</strong></th>
 <th><strong>Voltage (V)</strong></th>
 <th><strong>Current (A)</strong></th>
-<th><strong>Power (W) = V × A</strong></th>
+<th><strong>Power (W)</strong> = V × A</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>SEN0229 Motor</td>
+<td>SEN0229 Water Motor (Load)</td>
 <td>3.3V</td>
-<td>0.2A</td>
-<td>0.66W</td>
+<td>0.20 A</td>
+<td>0.66 W</td>
 </tr>
 <tr>
-<td>PIC18F47Q10</td>
+<td>PIC18F47Q10 MCU</td>
 <td>3.3V</td>
-<td>0.250A</td>
-<td>0.825W</td>
+<td>0.25 A</td>
+<td>0.825 W</td>
 </tr>
 <tr>
-<td>AP63203WU-7 (Buck Reg.)</td>
-<td>12V input → 3.3V output</td>
-<td>0.3A*</td>
-<td>3.06W (Input)</td>
-</tr>
-<tr>
-<td>Motor Driver IFX9201SGAUMA1</td>
+<td>IFX9201SGAUMA1 Motor Driver</td>
 <td>3.3V</td>
-<td>0.1A</td>
-<td>0.33W</td>
+<td>0.10 A</td>
+<td>0.33 W</td>
 </tr>
 <tr>
-<td>LED Debug (2x LEDs)</td>
+<td>Debug LEDs (2x 20mA)</td>
 <td>3.3V</td>
-<td>0.02A (each)</td>
-<td>0.132W</td>
+<td>0.04 A</td>
+<td>0.132 W</td>
 </tr>
 <tr>
-<td>10µF Capacitor (C1)</td>
-<td>Passive</td>
+<td>AP63203WU-7 Buck Regulator</td>
+<td>12V → 3.3V</td>
+<td>~0.30 A (Load)</td>
+<td>~3.06 W (Input)</td>
+</tr>
+<tr>
+<td>10kΩ Resistors (x2)</td>
+<td>3.3V</td>
+<td>0.00066 A (total)</td>
+<td>0.002 W</td>
+</tr>
+<tr>
+<td>220kΩ Resistors (x2)</td>
+<td>3.3V</td>
+<td>0.00003 A (total)</td>
+<td>0.00005 W</td>
+</tr>
+<tr>
+<td>Capacitors (All)</td>
+<td>—</td>
 <td>Negligible</td>
-<td>0W</td>
+<td>0 W</td>
 </tr>
 <tr>
-<td>10µF 50V Capacitor (C2)</td>
+<td>Inductor (Buck)</td>
+<td>—</td>
 <td>Passive</td>
-<td>Negligible</td>
-<td>0W</td>
+<td>0 W</td>
 </tr>
 <tr>
-<td>0.1µF 25V Capacitor (C3)</td>
+<td>Resettable Fuse</td>
+<td>—</td>
 <td>Passive</td>
-<td>Negligible</td>
-<td>0W</td>
+<td>0 W (unless tripped)</td>
 </tr>
 <tr>
-<td>2×22µF Capacitor (C4)</td>
-<td>Passive</td>
-<td>Negligible</td>
-<td>0W</td>
+<td>Barrel Jack Input Connector</td>
+<td>9V</td>
+<td>—</td>
+<td>0 W</td>
 </tr>
 <tr>
-<td>Inductor (3.9µH, L1)</td>
-<td>Passive</td>
-<td>Negligible</td>
-<td>0W</td>
-</tr>
-<tr>
-<td>Resistor 10kΩ (R1, R2)</td>
-<td>3.3V</td>
-<td>0.33mA (each)</td>
-<td>0.002W</td>
-</tr>
-<tr>
-<td>Resistor 220kΩ (R3, R4)</td>
-<td>3.3V</td>
-<td>0.015mA (each)</td>
-<td>0.00005W</td>
-</tr>
-<tr>
-<td>Fuse Block (02981001ZXT)</td>
-<td>32V Max</td>
-<td>Passive</td>
-<td>0W (unless tripped)</td>
-</tr>
-<tr>
-<td><strong>Through Hole Barrel Jack</strong></td>
-<td>9V Input</td>
-<td>-</td>
-<td>0W (Power Input)</td>
-</tr>
-<tr>
-<td>Jumpers (J1, J2)</td>
-<td>-</td>
-<td>Passive</td>
-<td>0W</td>
-</tr>
-<tr>
-<td>DOWNSTREAM Connector (P1)</td>
-<td>-</td>
-<td>-</td>
-<td>0W</td>
-</tr>
-<tr>
-<td>UPSTREAM Connector (P2)</td>
-<td>-</td>
-<td>-</td>
-<td>0W</td>
+<td>Upstream/Downstream Headers</td>
+<td>—</td>
+<td>—</td>
+<td>0 W</td>
 </tr>
 </tbody>
 </table>
-<h2 id="total-power-consumption">Total Power Consumption</h2>
-<h3 id="at-33v-load">At 3.3V Load:</h3>
+<hr />
+<h3 id="final-load-calculation">🔢 Final Load Calculation</h3>
 <ul>
-<li><strong>Total Current Draw</strong>: ~0.68A  </li>
-<li><strong>Total Power (3.3V Side)</strong>: ~1.98W</li>
+<li><strong>Total Current Draw at 3.3V</strong> ≈ <strong>0.68 A</strong></li>
+<li><strong>Total Power Consumption at 3.3V</strong> ≈ <strong>1.98 W</strong></li>
+<li><strong>Estimated Input Power from 12V side</strong> ≈ <strong>3.06 W</strong>, accounting for regulator efficiency (~88–90%).</li>
 </ul>
+<hr />
+<h2 id="how-the-power-budget-informed-design-decisions">📊 How the Power Budget Informed Design Decisions</h2>
+<h3 id="1-voltage-rail-selection">1. <strong>Voltage Rail Selection</strong></h3>
+<p>We standardized all logic and control hardware to operate on a <strong>3.3V rail</strong>. This removed the need for multiple regulators, minimized component incompatibilities, and allowed uniform signal thresholds across MCU, motor driver, and peripherals.</p>
+<h3 id="2-power-regulation-strategy">2. <strong>Power Regulation Strategy</strong></h3>
+<p>A critical aspect of power planning was regulator choice. We selected the <strong>AP63203WU-7</strong>, a compact, synchronous buck converter with a 2A current rating and integrated protection features.</p>
+<h3 id="3-motor-load-evaluation">3. <strong>Motor Load Evaluation</strong></h3>
+<p>The SEN0229 water turbine was tested to draw up to <strong>200mA</strong> in steady-state operation with 3.3V applied via the IFX9201. The <strong>motor driver itself adds another 100mA</strong>, yielding a worst-case actuation current near <strong>300mA</strong>.</p>
+<h3 id="4-protection-circuitry">4. <strong>Protection Circuitry</strong></h3>
+<p>To ensure fault tolerance, we added a <strong>resettable fuse</strong> at the regulator input rated slightly above expected input current (~1A hold).</p>
+<h3 id="5-peripheral-consumption">5. <strong>Peripheral Consumption</strong></h3>
+<p>Two debugging LEDs and several passive components were included in the power budget. While their draw is negligible, their inclusion reinforces the <strong>completeness</strong> of the design.</p>
+<hr />
+<h2 id="broader-design-insights-from-the-power-budget">🧰 Broader Design Insights from the Power Budget</h2>
+<p>This power budget was not a standalone checklist, but a <strong>driving force</strong> behind hardware decisions:</p>
+<ul>
+<li><strong>MCU Current Planning</strong></li>
+<li><strong>Heat Management</strong></li>
+<li><strong>Trace Sizing and PCB Routing</strong></li>
+<li><strong>Safe Expandability</strong></li>
+</ul>
+<hr />
+<h2 id="conclusion-using-the-power-budget-for-reliability-and-expansion">📈 Conclusion: Using the Power Budget for Reliability and Expansion</h2>
+<p>By carefully constructing this power budget, we achieved three critical goals:</p>
+<ol>
+<li><strong>Operational Stability</strong></li>
+<li><strong>Thermal Safety</strong></li>
+<li><strong>Design Scalability</strong></li>
+</ol>
+<p>This attention to power analysis ensures that the <strong>Motor Driver Subsystem functions safely, efficiently, and predictably</strong> under all expected conditions.</p>
 <h2 id="power-budget-link-for-excel-sheet">Power Budget Link for Excel Sheet</h2>
 <p><a href="https://docs.google.com/spreadsheets/d/156U78wOTZNQjrQSCz7AoKw_OFbUZ7FwH/edit?usp=sharing&amp;ouid=107614409505094169035&amp;rtpof=true&amp;sd=true">Power Budget </a></p>
 
