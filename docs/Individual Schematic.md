@@ -26,8 +26,8 @@ This document offers a complete and expanded technical explanation of the hardwa
 - ✅ Gerber Files for PCB Fabrication (.zip)
 - ✅ Bill of Materials (BOM in CSV/Excel format)
 
-➡️ [Final_Altium_PCB.zip](./Final_Altium_PCB.zip)  
-➡️ [Motor_Subsystem_Gerbers.zip](./Motor_Subsystem_Gerbers.zip)  
+➡️ [Final_Altium_PCB.zip](./Motor_Subsystem.zip)  
+➡️ [Motor_Subsystem_Gerbers.zip](./SK_Gerber.zip)  
 ➡️ [Motor_BOM.csv](./Motor_BOM.csv)
 
 ---
